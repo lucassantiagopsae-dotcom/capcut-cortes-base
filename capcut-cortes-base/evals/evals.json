@@ -1,0 +1,26 @@
+{
+  "skill_name": "capcut-cortes-base",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Tenho um video roteirizado de cliente no CapCut. Ele falou quase tudo certo, mas tem pausas longas, dois falsos arranques e algumas respiracoes. Limpa o corte sem mudar formato, layout, legenda ou duracao por regra propria.",
+      "expected_output": "O agente deve tratar a tarefa como limpeza tecnica, preservar o conteudo e o layout existentes, remover apenas pausas/erros que atrapalham, usar waveform e margem fonetica, evitar impor tempo de short e registrar um mapa simples se mexer no draft."
+    },
+    {
+      "id": 2,
+      "prompt": "Corta esse trecho de live no CapCut. Nao precisa legenda nem titulo. Quero so que voce deixe a fala mais dinamica, removendo chat, repeticoes e gaps, mas sem picotar fala continua nem criar tique de audio.",
+      "expected_output": "O agente deve aplicar microcortes com criterio, preservar cronologia, usar escadinha e overlap somente em transicoes reais, evitar source duplicado, aplicar fades curtos apenas onde necessario e nao assumir layout ou duracao fixa."
+    },
+    {
+      "id": 3,
+      "prompt": "O corte ficou ruim no inicio: ele comeca com a palavra comida e depois tem uma sobreposicao muito adiantada. Ajusta no mesmo draft do CapCut e aprende o padrao.",
+      "expected_output": "O agente deve corrigir bordas com margem fonetica, atrasar/reduzir overlap cedo demais, checar waveform e source duplicado, preservar o draft existente, salvar backup tecnico e documentar o aprendizado sem criar regra de cliente."
+    },
+    {
+      "id": 4,
+      "prompt": "Estou editando um video longo para YouTube, nao e short. Usa a metodologia de corte pra tirar pausas e erros, mas mantem a estrutura da aula e nao muda o canvas.",
+      "expected_output": "O agente deve usar a skill como base de corte para video longo, nao aplicar limite de 1 minuto nem formato vertical, preservar a estrutura da aula, remover erros/gaps e fazer QA de audio/continuidade."
+    }
+  ]
+}
+
