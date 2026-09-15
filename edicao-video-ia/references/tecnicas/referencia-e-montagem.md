@@ -51,6 +51,9 @@ nos takes restantes nao equivale a aplicar o mesmo refino individual.
 
 ## Escala e Ritmo Visual
 
+Antes de escolher angulos de gravacoes simultaneas, consulte
+[Multicamera por direcao do olhar](multicamera-por-olhar.md).
+
 Inspecione barras na propria fonte. Defina crop/escala base que as esconda em todo
 o movimento, inclusive no zoom-out. Use o quadro util como referencia; proteja
 rosto, gestos e contexto. Nao use zoom para esconder fonetica mal cortada.
@@ -59,3 +62,39 @@ Em plano aberto, alterne reenquadramentos quando houver mudanca de ideia ou
 enfase. Evite pulsacao constante e ampliacao alem da qualidade da fonte. Se o
 pedido for apenas acelerar um take, ajuste pontualmente com preservacao de pitch
 quando disponivel, verificando labios e naturalidade; nao acelere todos.
+
+## Emendas de Bico Sobre Cauda
+
+Use quando o briefing pedir a entrada da proxima fala durante o decaimento da
+anterior. Encurtar a pausa e concatenar dois clipes nao produz essa sobreposicao.
+"Bico" designa aqui o pre-ataque/ataque da fala, inclusive sons fracos anteriores
+ao pico; cauda inclui a terminacao audivel, nao apenas a vogal mais forte.
+
+1. Relacione transcricao e som ao redor de cada borda. Se o ASR comprimir varias
+   palavras em poucos milissegundos ou esticar um fim sobre a pausa, confira a
+   fonte e, quando necessario e autorizado, retranscreva somente o trecho.
+2. Examine o intervalo candidato a descarte, nao apenas as pontas. Uma legenda
+   pode continuar exibindo palavras cujo audio foi removido. Recupere primeiro
+   qualquer parte da frase que esteja faltando.
+3. Localize o decaimento completo da primeira fala e a entrada fraca da seguinte.
+   Inspecione tambem as altas frequencias ao procurar consoantes como o "s" final;
+   um limiar unico de volume pode confundir fricativas com silencio.
+4. Posicione o inicio do proximo clipe antes do fim do anterior. A regiao comum
+   deve conter a cauda e o bico, sem empilhar duas silabas fortes nem duplicar
+   amostras da mesma fala. Ajuste cada emenda; nao use overlap fixo universal.
+5. Misture as duas faixas durante esse intervalo. Fades curtos servem para
+   evitar clique nas extremidades; nao devem apagar o bico nem terminar a cauda
+   antes de a proxima fala entrar. Confira ganho e clipping da soma: normalizacao
+   automatica ou uma curva de crossfade podem reduzir a voz sem necessidade.
+
+O mapa precisa representar a sobreposicao real:
+`inicio_proximo = fim_anterior - overlap`. Recalcule a timeline acumulada com essa
+subtracao, inclusive legendas, visuais e duracao. Uma troca visual pode ficar
+dentro da emenda sonora sem dissolver dois rostos. Nao confunda overlap de audio
+com duas imagens simultaneas ou com um fade entre clipes sem intersecao temporal.
+
+Se houver aceleracao final, transforme todos os tempos pelo mesmo fator. Verifique
+as duas faixas e a soma; inspecione picos, ataques e caudas e ouca as emendas em
+velocidade normal e na entrega quando houver escuta disponivel. Ausencia de
+clipping nao certifica naturalidade. Consulte o
+[caso aprovado](../casos/convite-duas-cameras.md) para exemplos, nao presets.

@@ -41,6 +41,8 @@ misto, combine modulos compativeis e resolva conflitos pelo briefing atual.
 
 - Analise de referencia, limites de trechos e cortes naturais:
   [Referencia e montagem](references/tecnicas/referencia-e-montagem.md).
+- Gravacoes simultaneas, sincronismo e escolha da camera pelo olhar:
+  [Multicamera por direcao do olhar](references/tecnicas/multicamera-por-olhar.md).
 - Escolha emocional da musica, transicoes e mixagem:
   [Direcao musical](references/tecnicas/direcao-musical.md).
 - Textos de impacto, icones, animacao e enquadramento:
@@ -52,6 +54,8 @@ misto, combine modulos compativeis e resolva conflitos pelo briefing atual.
 
 - Somente ao trabalhar na RocketHub ou consultar aquele exemplo:
   [Caso RocketHub](references/casos/rockethub.md).
+- Exemplo aprovado de convite em duas cameras, pausas e sobreposicao fonetica:
+  [Convite em duas cameras](references/casos/convite-duas-cameras.md).
 - Quando o usuario pedir para ensinar um estilo ou incorporar feedback:
   [Evoluir a biblioteca](references/fluxos/evoluir-biblioteca.md).
 

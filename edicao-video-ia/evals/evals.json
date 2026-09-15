@@ -60,6 +60,36 @@
       "id": 12,
       "prompt": "Cada conversa nossa treina essa skill sozinha? Quero guardar o aprendizado desta revisao, mas nao subir nada ao GitHub ainda.",
       "expected_output": "Explica que persistencia exige atualizar arquivos, nao treinamento automatico do modelo. Registra aprendizado com escopo/evidencia, preserva instrucoes anteriores pertinentes e nao faz push."
+    },
+    {
+      "id": 13,
+      "prompt": "Esses dois arquivos tem a mesma fala, mas foram gravados simultaneamente. Ela olha para o lado no convite final. Escolha a camera para a qual fala, inclusive no fechamento.",
+      "expected_output": "Consulta multicamera-por-olhar, distingue angulos de novas tentativas, verifica sincronismo por audio e boca/gestos em mais de uma janela e registra offset. Revisa ida e volta no trecho solicitado e mantem uma fonte de audio adequada; nao descarta a primeira fala nem interpreta olhar lateral como leitura automaticamente."
+    },
+    {
+      "id": 14,
+      "prompt": "No convite ela desvia os olhos por um instante e volta. A versao que cortava para cada olhar ficou picotada. Quero fluidez sem perder a camera principal de cada frase.",
+      "expected_output": "Distingue microdesvio de mudanca sustentada, avalia a unidade de sentido e reduz retornos breves de camera. Nao cria cadencia fixa nem remove fala correta so por causa do olhar. Se so a imagem muda, preserva audio continuo."
+    },
+    {
+      "id": 15,
+      "prompt": "Depois de vem e depois de canais soltos ha pausas. Quero o bico de aprender e de em um funil entrando por cima das caudas anteriores. Nao basta aproximar os clipes.",
+      "expected_output": "Inspeciona cada borda na fonte, inclusive a fricativa final, e implementa duas sobreposicoes reais com faixas simultaneas. Escolhe duracoes individualmente, protege ataque/cauda, evita duas silabas fortes concorrentes e recalcula timeline, legendas e velocidade. Nao aplica 75/90 ms por memoria do caso sem analisar a fonte, nem chama concatenacao com fades de overlap."
+    },
+    {
+      "id": 16,
+      "prompt": "A legenda ainda diz transformar canais soltos, mas o audio pula para em um funil. O ASR colocou varias palavras quase no mesmo instante e chamou esse intervalo de pausa.",
+      "expected_output": "Inspeciona tambem o intervalo descartado, confronta ASR e waveform e recupera a fala ausente antes de refinar bordas. Retranscreve o trecho se necessario e autorizado, sem considerar legenda correta como prova de audio preservado."
+    },
+    {
+      "id": 17,
+      "prompt": "Agora e outra marca, uma entrevista de camera unica, sem acelerar e com pausas expressivas. As legendas ja estao aprovadas. Aproveite so o fundamento de preservar a fala.",
+      "expected_output": "Preserva 1x, pausas intencionais e legendas existentes; nao impoe multicamera, AssemblyAI, amarelo, posicao na clavicula ou overlaps do caso. Usa apenas as tecnicas pertinentes ao pedido."
+    },
+    {
+      "id": 18,
+      "prompt": "Aplicou reducao de ruido e equalizacao na voz dessa sala e mediu que nao clipa. Pode dizer que tirou o eco e ouviu as emendas?",
+      "expected_output": "Distingue ruido e reverberacao e relata somente o tratamento e as verificacoes feitos. Ausencia de clipping nao prova naturalidade nem remocao de eco; nao alega escuta inexistente."
     }
   ]
 }
