@@ -20,7 +20,21 @@
       "id": 4,
       "prompt": "Estou editando um video longo para YouTube, nao e short. Usa a metodologia de corte pra tirar pausas e erros, mas mantem a estrutura da aula e nao muda o canvas.",
       "expected_output": "O agente deve usar a skill como base de corte para video longo, nao aplicar limite de 1 minuto nem formato vertical, preservar a estrutura da aula, remover erros/gaps e fazer QA de audio/continuidade."
+    },
+    {
+      "id": 5,
+      "prompt": "O timestamp termina a palavra dor em 3,00 s, mas a vogal e o ar continuam ate perto de 3,24 s. O proximo trecho entra com overlap fixo de 0,16 s e parece comer esse final. Em outra emenda a fala original ja era continua. Refina isso sem legenda.",
+      "expected_output": "O agente deve inspecionar o contexto e o audio dos dois lados, preservar a terminacao real sem tomar 3,24 s como borda exata automatica, ajustar localmente ou eliminar o overlap e restaurar continuidade onde couber. Nao deve apenas aplicar o mesmo fade a tudo, duplicar source, impor legenda ou encurtar outras falas para compensar a duracao recuperada. Deve distinguir analise tecnica de escuta direta."
+    },
+    {
+      "id": 6,
+      "prompt": "Voce refinou os dois primeiros depoimentos e so olhou o volume dos outros cinco. Agora aplica o mesmo cuidado de fonetica em todos os restantes e atualiza o projeto editavel e o MP4.",
+      "expected_output": "O agente deve revisar individualmente todas as emendas e extremidades dos cinco takes restantes, cruzando contexto e som, e registrar ajustes, cortes mantidos e falas restauradas como continuas. Deve preservar os dois primeiros takes fora do pedido, conferir fades e tempos nas fontes dentro dos compostos e sua correspondencia com o render, salvar backup e relatar a cobertura real. Nao deve chamar uma nova varredura de silencio de refino completo nem alegar escuta que nao realizou."
+    },
+    {
+      "id": 7,
+      "prompt": "O detector marcou um intervalo abaixo de -40 dB como silencio, mas ele parece conter o final soprado da palavra. A nova transcricao tambem omitiu um eu e mudou SD para desse D. Da para considerar o audio aprovado?",
+      "expected_output": "O agente deve tratar o limiar e as diferencas de transcricao como pistas, verificar o som e os intervalos preservados na fonte, e recuperar a borda se houver cauda removida. Nao deve remover a regiao apenas por baixa energia, reescrever a fala para combinar com a transcricao, nem garantir naturalidade por similaridade textual ou ausencia de saturacao. Deve informar os limites de verificacao e priorizar escuta quando disponivel."
     }
   ]
 }
-

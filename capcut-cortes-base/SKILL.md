@@ -40,6 +40,7 @@ Se o usuario ou uma skill do projeto definir alguma dessas coisas, siga essa reg
 Leia apenas o que for relevante para o pedido:
 
 - `references/audio-waveform-e-fonetica.md`: quando o trabalho envolver precisao de audio, pausas na wave, respiracao, silabas comidas, gaguejo, source duplicado ou fades.
+- `references/refino-fonetico-por-emenda.md`: quando o usuario apontar caudas cortadas, overlap mecanico ou pedir o mesmo refino em todos os takes; inclui cobertura da revisao e verificacao de render/draft.
 - `references/microcortes-e-continuidade.md`: quando for criar ou refinar a montagem, escolher onde cortar, limpar fala ou preservar naturalidade.
 - `references/capcut-draft-editavel.md`: quando precisar editar ou criar draft no CapCut, mexer em JSON, organizar camadas, precompor ou evitar quebra da timeline.
 - `references/exportacao-e-qa.md`: quando o usuario pedir MP4 final/exportacao ou quando for necessario conferir se o layout foi preservado.
@@ -125,6 +126,10 @@ Como ponto de partida:
 
 O ouvido manda mais que o numero. Se a emenda soa mordida, aumente a margem. Se soa arrastada, reduza a sobra.
 
+Confira tambem o inicio e o encerramento de cada take. A duracao anterior do
+corte nao e uma meta: recuperar uma terminacao pode aumentar o video. Para o
+procedimento por emenda, leia `references/refino-fonetico-por-emenda.md`.
+
 ### 5. Fazer overlap como zona fonetica
 
 Overlap nao e empilhar falas. E encaixar a cauda da fala anterior com o ataque da proxima.
@@ -202,6 +207,11 @@ Faca uma passada final ouvindo as emendas principais:
 
 Se o usuario apontar um erro no CapCut por print ou timecode, corrija primeiro o problema especifico e depois procure o mesmo padrao no restante do video.
 
+Em pedidos de refino de todos os takes, registre a revisao individual de cada
+emenda, inclusive as mantidas ou desfeitas. Uma varredura de baixa energia nao
+equivale a esse refino. Na entrega, diferencie o que foi ajustado, inspecionado
+tecnicamente e ouvido; se nao houve escuta direta, declare essa limitacao.
+
 ## Mapa de corte
 
 Quando o trabalho for complexo, salve um mapa em Markdown ou CSV com:
@@ -235,4 +245,3 @@ O mapa ajuda a transformar feedback humano em aprendizado sem misturar isso com 
 - [ ] Backup tecnico salvo antes de editar draft
 - [ ] QA auditivo feito
 - [ ] Mapa de corte salvo quando necessario
-
