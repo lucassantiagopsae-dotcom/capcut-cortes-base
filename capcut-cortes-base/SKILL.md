@@ -9,6 +9,11 @@ Esta skill e a camada tecnica de corte. Ela ensina como cortar bem no CapCut sem
 
 Use esta skill como motor base. Outras skills podem definir o estilo editorial, a duracao, o layout, a legenda, o titulo, o destino e as regras do projeto.
 
+Para um pedido que tambem inclua direcao de musica, motion graphics ou depoimentos
+de abertura de live, este repositorio oferece a skill complementar
+`edicao-audiovisual`. Instale-a junto quando precisar dessas camadas. Ela separa
+fundamentos e casos de cliente; esta skill continua dedicada ao corte tecnico.
+
 ## O que esta skill resolve
 
 - limpar pausas, repeticoes, gaguejos, falsos arranques e erros de fala;

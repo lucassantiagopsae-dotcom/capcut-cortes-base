@@ -1,8 +1,10 @@
-# CapCut Cortes Base
+# Cortes Base e Edicao Audiovisual
 
-Skill neutra para corte tecnico/editorial no CapCut.
+Repositorio com duas skills complementares: `capcut-cortes-base` para corte
+tecnico/editorial no CapCut e `edicao-audiovisual` para coordenar montagem,
+trilha e motion graphics sem impor editor.
 
-Ela guarda apenas a camada base de corte, sem regras especificas de cliente ou campanha:
+A skill de cortes guarda apenas a camada base, sem regras especificas de cliente ou campanha:
 
 - sem duracao fixa;
 - sem formato vertical obrigatorio;
@@ -39,14 +41,25 @@ capcut-cortes-base/
   references/
   scripts/
   evals/
+edicao-audiovisual/
+  SKILL.md
+  agents/openai.yaml
+  references/
+    referencia-e-montagem.md
+    direcao-musical.md
+    motion-e-hierarquia.md
+    depoimentos-abertura-live.md
+    entrega-e-qa.md
+  evals/evals.json
 ```
 
 ## Instalar pelo GitHub
 
-Depois que o repo estiver no GitHub:
+Instale a camada desejada, ou ambas:
 
 ```powershell
-npx skills add https://github.com/SEU_USUARIO/capcut-cortes-base --skill capcut-cortes-base
+npx skills add https://github.com/lucassantiagopsae-dotcom/capcut-cortes-base --skill capcut-cortes-base
+npx skills add https://github.com/lucassantiagopsae-dotcom/capcut-cortes-base --skill edicao-audiovisual
 ```
 
 ## Atualizar
@@ -57,4 +70,12 @@ Quando um novo aprendizado de corte aparecer, atualize:
 2. `capcut-cortes-base/references/` se for detalhe tecnico;
 3. `capcut-cortes-base/evals/evals.json` se valer a pena testar o comportamento.
 
-Se o aprendizado for de um projeto especifico, deixe na skill especifica daquele projeto e nao nesta base.
+Para trilha, animacao ou entrega audiovisual, atualize a referencia correspondente
+em `edicao-audiovisual/references/` e acrescente um cenario de regressao quando
+necessario. Mantenha o `SKILL.md` como entrada curta, com leitura sob demanda.
+
+O guia de depoimentos contem o caso RocketHub identificado como exemplo, separado
+dos fundamentos. Nao transforme sua paleta, duracao ou densidade de efeitos em
+regra global. Nao inclua midias privadas, credenciais ou materiais licenciados no
+repositorio. Os cenarios em `evals/` precisam ser executados para constituir
+evidencia de comportamento; sua existencia sozinha nao valida uma edicao.

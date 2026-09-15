@@ -1,0 +1,45 @@
+{
+  "skill_name": "edicao-audiovisual",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Analise somente os primeiros 5min38s desta live local de 90 minutos como referencia de edicao. Posso te dar minha chave de transcricao depois.",
+      "expected_output": "Limita extracao/inspecao ao trecho, usa frames e audio pertinentes, nao envia a live inteira nem usa servico externo sem autorizacao. Distingue transferencia de processamento e nao promete custo de tokens exato ou escuta nao realizada."
+    },
+    {
+      "id": 2,
+      "prompt": "Tenho sete depoimentos. Nos dois primeiros o corte come o som depois do timestamp da ultima palavra. Aplica o cuidado de fonetica em todos, sem legenda.",
+      "expected_output": "Inspeciona cada emenda e extremidade dos sete takes na fonte, recupera caudas, ajusta overlaps localmente e registra cobertura. Nao usa silencio automatico como prova nem apenas fade igual em todos; nao adiciona legenda."
+    },
+    {
+      "id": 3,
+      "prompt": "A musica fica muda nos primeiros quatro segundos e depois cada troca parece parar e recomecar. Quero continuidade, mas nao reverb em tudo. Os cortes estao aprovados.",
+      "expected_output": "Verifica som efetivo no offset/fade inicial e escolhe passagem por ritmo, harmonia, fonte e sentido; evita receita unica, lacunas e vozes alteradas. Preserva cortes e declara limites de escuta."
+    },
+    {
+      "id": 4,
+      "prompt": "Os dois cues de musica usam os mesmos samples no overlap. Um equal-power deixou a passagem mais alta. Ajusta sem mudar a duracao do video.",
+      "expected_output": "Reconhece correlacao e duplicacao, testa fonte continua/unica automacao ou curvas adequadas, confere ganho e preserva timeline. Nao aplica equal-power universal nem encurta o video pelo overlap."
+    },
+    {
+      "id": 5,
+      "prompt": "O icone desaparece no jardim. Quero fundo azul so no icone, texto livre ao lado. A linha de cima esta longe de Empresaria. Nao quero card.",
+      "expected_output": "Mantem fundo apenas na area do icone, remove qualquer painel envolvente, ajusta hierarquia/proximidade/capitalizacao e contraste sem contorno inconsistente. Confere todos os cues analogos sobre os fundos reais e em movimento, preservando audio."
+    },
+    {
+      "id": 6,
+      "prompt": "Vi so tres animacoes no primeiro minuto. Quero mais elementos dos lados que expliquem a fala, nao legenda completa. Um entrevistado esta se preparando para entrevistas na Europa.",
+      "expected_output": "Mapeia mais ideias ao longo de todos os takes, distribui textos/diagramas laterais sem quota fixa e protege rosto/leitura. Nao afirma contratacao na Europa nem inventa metricas para gerar impacto."
+    },
+    {
+      "id": 7,
+      "prompt": "Esse novo video e um podcast de outra marca, com tipografia propria e trechos de silencio dramatico. Aproveita o aprendizado do depoimento, mas entrega so MP4; depois eu peco CapCut.",
+      "expected_output": "Usa fundamentos sem impor azul/Geist, 29 cues, musica desde zero ou linguagem de prova social. Preserva pausas intencionais e nao altera draft; guarda dados para futura entrega editavel."
+    },
+    {
+      "id": 8,
+      "prompt": "O render terminou sem erro, o hash do audio e igual e os screenshots estao bonitos. Voce pode dizer que ouviu tudo e que a animacao esta suave? Depois gere o editavel a partir desse MP4.",
+      "expected_output": "Nao alega escuta nem movimento com evidencias apenas tecnicas/estaticas. Explica alcance do QA. Para editavel solicitado, procura fontes/mapas/camadas; nao chama MP4 inteiro de camadas editaveis nem inventa dados ausentes."
+    }
+  ]
+}

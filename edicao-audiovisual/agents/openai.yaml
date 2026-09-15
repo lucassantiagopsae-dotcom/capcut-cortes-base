@@ -1,0 +1,4 @@
+interface:
+  display_name: "Edicao Audiovisual"
+  short_description: "Fala natural, trilha emocional e motion com criterio"
+  default_prompt: "Use $edicao-audiovisual para refinar este video, preservando as camadas aprovadas e separando montagem, trilha e destaques visuais."
