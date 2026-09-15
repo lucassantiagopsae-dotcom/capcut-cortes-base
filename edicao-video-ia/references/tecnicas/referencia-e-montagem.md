@@ -1,5 +1,7 @@
 # Referencia e Montagem
 
+Tecnica compartilhada; nao determina estilo ou marca.
+
 ## Analisar So o Trecho Pedido
 
 Se o pedido limita uma live a 00:00-05:38, limite a extracao, transcricao e

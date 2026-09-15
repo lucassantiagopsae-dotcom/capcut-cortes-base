@@ -1,28 +1,7 @@
-# Depoimentos para Abertura de Live
+# Caso RocketHub
 
-Leia quando houver prova social em sequencia, especialmente antes de uma live.
-Nao e regra para podcast, aula inteira, documentario ou todo talking head.
-
-## Direcao do Formato
-
-Priorize pessoas criveis, falas compreensiveis e progressao entre ideias.
-Identifique o que cada trecho de fato sustenta: dificuldade, processo, apoio,
-aplicacao, resultado ou pertencimento. Nao fabrique uma jornada igual para todos.
-Se a ordem e os intervalos vieram num roteiro, preserve-os; proponha mudanca de
-ordem separadamente quando necessaria. Nao atribua resultado de uma pessoa a outra.
-
-Fala espacada pode pedir limpeza e encaixe fonetico, mas hesitacao expressiva
-tambem comunica autenticidade. Reveja todos os takes com o mesmo cuidado, sem
-transformar pessoas diferentes em uma cadencia artificial uniforme.
-
-Musica acompanha a progressao do bloco, nao a quantidade de entrevistados.
-Planeje continuidade entre entradas e uma chegada coerente ao fim da abertura.
-Nao deixe a abertura musicalmente vazia por acidente. Silencio pode existir
-quando tiver motivo narrativo e retomada pensada.
-
-Visuais enfatizam significado: uma relacao simples pode explicar apoio melhor
-que repetir toda a frase. De tempo para olhar a pessoa. Decida pelo briefing se
-ha legendas completas, apenas destaques ou nenhuma camada textual.
+Consulte apenas para o cliente ou como exemplo explicitamente solicitado. O estilo
+reutilizavel esta em [Depoimentos de abertura](../estilos/depoimentos-abertura-live.md).
 
 ## Caso RocketHub: Aprendizado, Nao Preset Global
 

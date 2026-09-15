@@ -1,5 +1,5 @@
 {
-  "skill_name": "edicao-audiovisual",
+  "skill_name": "edicao-video-ia",
   "evals": [
     {
       "id": 1,
@@ -40,6 +40,26 @@
       "id": 8,
       "prompt": "O render terminou sem erro, o hash do audio e igual e os screenshots estao bonitos. Voce pode dizer que ouviu tudo e que a animacao esta suave? Depois gere o editavel a partir desse MP4.",
       "expected_output": "Nao alega escuta nem movimento com evidencias apenas tecnicas/estaticas. Explica alcance do QA. Para editavel solicitado, procura fontes/mapas/camadas; nao chama MP4 inteiro de camadas editaveis nem inventa dados ausentes."
+    },
+    {
+      "id": 9,
+      "prompt": "Usa edicao-video-ia num talking head de outra marca. Nao e depoimento nem abertura de live. Quero so destacar tres conceitos, sem mudar os cortes.",
+      "expected_output": "Seleciona talking-head e motion-e-hierarquia, consulta entrega para o render. Nao carrega o caso RocketHub por padrao, nao impoe narrativa de prova social e preserva os cortes."
+    },
+    {
+      "id": 10,
+      "prompt": "Acabamos de aprovar uma edicao de podcast com duas cameras e quero ensinar esse estilo a biblioteca. A marca deste cliente e vermelha, mas isso nao e regra para podcasts.",
+      "expected_output": "Le o fluxo de evolucao, extrai criterios da edicao real, cria modulo de estilo somente com conhecimento sustentado, separa a marca em caso de cliente e atualiza roteamento e cenario de teste. Nao duplica tecnicas, nao preenche estilos inventados nem publica no remoto sem autorizacao."
+    },
+    {
+      "id": 11,
+      "prompt": "Preciso editar um documentario observacional. Nao vi esse estilo no catalogo. Aplica sua skill geral sem transformar em video de depoimento.",
+      "expected_output": "Reconhece estilo nao catalogado, deriva a linguagem do briefing e referencias, usa tecnicas pertinentes sem aplicar preset de depoimentos/talking head. Nao afirma que existe modulo ou experiencia validada que nao possui."
+    },
+    {
+      "id": 12,
+      "prompt": "Cada conversa nossa treina essa skill sozinha? Quero guardar o aprendizado desta revisao, mas nao subir nada ao GitHub ainda.",
+      "expected_output": "Explica que persistencia exige atualizar arquivos, nao treinamento automatico do modelo. Registra aprendizado com escopo/evidencia, preserva instrucoes anteriores pertinentes e nao faz push."
     }
   ]
 }

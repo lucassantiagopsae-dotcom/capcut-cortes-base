@@ -1,9 +1,9 @@
 ---
-name: edicao-audiovisual
-description: "Edita e refina videos combinando fala natural, direcao de trilha sonora e motion graphics alinhados ao conteudo e a marca. Use para montagem audiovisual, depoimentos de abertura de live, talking heads, transicoes musicais e destaques visuais. Para apenas limpar pausas ou corrigir fonetica, prefira a skill de cortes disponivel; esta skill coordena as camadas sem impor editor, marca ou formato."
+name: edicao-video-ia
+description: "Coordena edicao de video com IA e seleciona modulos de tecnica e estilo conforme o briefing: montagem, trilha, talking head e depoimentos. Use para editar ou refinar videos e incorporar novos estilos aprendidos em projetos. Nao gera cenas por padrao nem impoe editor, formato ou marca; limpeza fonetica isolada pode usar a skill de cortes disponivel."
 ---
 
-# Edicao Audiovisual
+# Edicao de Video com IA
 
 Transforme o material e o feedback em decisoes de montagem verificaveis. Nao
 confunda aumentar a quantidade de efeitos com melhorar a narrativa. Preserve a
@@ -20,22 +20,44 @@ decisoes do cliente. Nao aplique automaticamente a outro trabalho o estilo do
 ultimo caso. Um pedido de contraste no icone nao autoriza criar um painel para
 toda a composicao. Um pedido de musica nao autoriza recortar novamente a fala.
 
-## Ler Apenas o Necessario
+## Selecionar Modulos
+
+Esta e a entrada geral. Os arquivos abaixo sao modulos internos, nao agentes nem
+subskills automaticamente invocadas. Leia explicitamente apenas os necessarios.
+Se o estilo nao estiver catalogado, derive a linguagem do briefing/referencia;
+nao force o video para um estilo existente nem invente um preset aprovado.
+
+Escolha primeiro o estilo e depois as tecnicas exigidas pelo ajuste. Em pedido
+misto, combine modulos compativeis e resolva conflitos pelo briefing atual.
+
+### Estilos
+
+- Montagem de prova social antes de live:
+  [Depoimentos de abertura](references/estilos/depoimentos-abertura-live.md).
+- Pessoa falando para camera com enfases e apoio visual:
+  [Talking head com destaques](references/estilos/talking-head.md).
+
+### Tecnicas Compartilhadas
 
 - Analise de referencia, limites de trechos e cortes naturais:
-  [references/referencia-e-montagem.md](references/referencia-e-montagem.md).
+  [Referencia e montagem](references/tecnicas/referencia-e-montagem.md).
 - Escolha emocional da musica, transicoes e mixagem:
-  [references/direcao-musical.md](references/direcao-musical.md).
+  [Direcao musical](references/tecnicas/direcao-musical.md).
 - Textos de impacto, icones, animacao e enquadramento:
-  [references/motion-e-hierarquia.md](references/motion-e-hierarquia.md).
-- Depoimentos e abertura de live, incluindo o caso RocketHub como exemplo:
-  [references/depoimentos-abertura-live.md](references/depoimentos-abertura-live.md).
+  [Motion e hierarquia](references/tecnicas/motion-e-hierarquia.md).
 - Exportacao, preservacao do aprovado, editabilidade e evidencias de revisao:
-  [references/entrega-e-qa.md](references/entrega-e-qa.md).
+  [Entrega e QA](references/fluxos/entrega-e-qa.md).
+
+### Casos e Evolucao
+
+- Somente ao trabalhar na RocketHub ou consultar aquele exemplo:
+  [Caso RocketHub](references/casos/rockethub.md).
+- Quando o usuario pedir para ensinar um estilo ou incorporar feedback:
+  [Evoluir a biblioteca](references/fluxos/evoluir-biblioteca.md).
 
 Se a skill `cortes-base` ou `capcut-cortes-base` estiver instalada, use suas
 referencias para refino fonetico detalhado. Nao e dependencia obrigatoria: o
-essencial independente de ferramenta esta em `referencia-e-montagem.md`.
+essencial independente de ferramenta esta no modulo de referencia e montagem.
 Use a skill especifica do editor apenas quando operar aquele editor.
 
 ## Fluxo de Trabalho

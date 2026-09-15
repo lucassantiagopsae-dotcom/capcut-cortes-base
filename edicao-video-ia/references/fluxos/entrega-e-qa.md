@@ -1,5 +1,7 @@
 # Entrega e QA
 
+Fluxo comum aos estilos; execute somente as verificacoes pertinentes ao escopo.
+
 ## Preservar o Aprovado
 
 Antes de alterar, identifique fontes, versao de referencia e camadas autorizadas.

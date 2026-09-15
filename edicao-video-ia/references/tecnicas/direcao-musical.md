@@ -1,5 +1,7 @@
 # Direcao Musical
 
+Tecnica compartilhada; a funcao emocional vem do briefing e do estilo escolhido.
+
 ## Planejar Pela Cena
 
 Antes de procurar faixa, relacione o sentido da fala, expressao, cadencia e

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Edicao de Video com IA"
+  short_description: "Edicao de video por tecnicas, estilos e casos"
+  default_prompt: "Use $edicao-video-ia para editar este video, escolhendo os modulos de estilo e tecnica adequados ao briefing e preservando o que ja foi aprovado."

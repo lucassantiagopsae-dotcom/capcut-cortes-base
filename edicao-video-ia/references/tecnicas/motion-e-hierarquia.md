@@ -1,5 +1,7 @@
 # Motion e Hierarquia Visual
 
+Tecnica compartilhada; leia o estilo escolhido antes de definir sua densidade.
+
 ## Uma Ideia por Intervencao
 
 Escolha frases-chave, conceitos e relacoes que ajudem a compreender a fala, nao

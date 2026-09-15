@@ -11,7 +11,7 @@ Use esta skill como motor base. Outras skills podem definir o estilo editorial, 
 
 Para um pedido que tambem inclua direcao de musica, motion graphics ou depoimentos
 de abertura de live, este repositorio oferece a skill complementar
-`edicao-audiovisual`. Instale-a junto quando precisar dessas camadas. Ela separa
+`edicao-video-ia`. Instale-a junto quando precisar dessas camadas. Ela separa
 fundamentos e casos de cliente; esta skill continua dedicada ao corte tecnico.
 
 ## O que esta skill resolve
