@@ -1,6 +1,6 @@
 ---
 name: edicao-video-ia
-description: "Coordena edicao de video com IA e seleciona modulos de tecnica e estilo conforme o briefing: montagem, trilha, talking head e depoimentos. Use para editar ou refinar videos e incorporar novos estilos aprendidos em projetos. Nao gera cenas por padrao nem impoe editor, formato ou marca; limpeza fonetica isolada pode usar a skill de cortes disponivel."
+description: "Edita e refina videos com corte fonetico, multicamera, legendas, titulos, trilha e motion; inclui fluxos editaveis CapCut e Criado/FFmpeg e linguagem de cortes de live por tese. Use para montar, corrigir ou exportar videos e incorporar aprendizados. Seleciona tecnicas e estilos pelo briefing, sem impor editor, formato ou marca nem gerar cenas por padrao."
 ---
 
 # Edicao de Video com IA
@@ -27,8 +27,9 @@ subskills automaticamente invocadas. Leia explicitamente apenas os necessarios.
 Se o estilo nao estiver catalogado, derive a linguagem do briefing/referencia;
 nao force o video para um estilo existente nem invente um preset aprovado.
 
-Escolha primeiro o estilo e depois as tecnicas exigidas pelo ajuste. Em pedido
-misto, combine modulos compativeis e resolva conflitos pelo briefing atual.
+Em pedido apenas tecnico, escolha diretamente a tecnica e o fluxo de entrega.
+Quando houver direcao editorial, escolha tambem o estilo. Em pedido misto,
+combine modulos compativeis e resolva conflitos pelo briefing atual.
 
 ### Estilos
 
@@ -36,9 +37,13 @@ misto, combine modulos compativeis e resolva conflitos pelo briefing atual.
   [Depoimentos de abertura](references/estilos/depoimentos-abertura-live.md).
 - Pessoa falando para camera com enfases e apoio visual:
   [Talking head com destaques](references/estilos/talking-head.md).
+- Recorte de live/aula que precisa defender uma ideia com contexto e fechamento:
+  [Cortes de live por tese](references/estilos/cortes-live-por-tese.md).
 
 ### Tecnicas Compartilhadas
 
+- Limpeza, compactacao, cadencia, pontes e reajuste de clipes com overlap:
+  [Limpeza e cadencia](references/tecnicas/limpeza-e-cadencia.md).
 - Analise de referencia, limites de trechos e cortes naturais:
   [Referencia e montagem](references/tecnicas/referencia-e-montagem.md).
 - Gravacoes simultaneas, sincronismo e escolha da camera pelo olhar:
@@ -50,19 +55,33 @@ misto, combine modulos compativeis e resolva conflitos pelo briefing atual.
 - Exportacao, preservacao do aprovado, editabilidade e evidencias de revisao:
   [Entrega e QA](references/fluxos/entrega-e-qa.md).
 
+### Execucao e Editabilidade
+
+- Criar, corrigir ou exportar draft CapCut, incluindo compostos e espelhos:
+  [CapCut editavel](references/fluxos/capcut-editavel.md).
+- Projeto parametrico no Criado ou render derivado por FFmpeg:
+  [Criado e FFmpeg editavel](references/fluxos/criado-ffmpeg-editavel.md).
+- Legenda sincronizada ao audio realmente montado:
+  [Legendas do audio final](references/fluxos/legendas-audio-final.md).
+- Analise local de baixa energia: `scripts/analisar_waveform_silencios.py`;
+  leia uso e limites em [Limpeza e cadencia](references/tecnicas/limpeza-e-cadencia.md).
+
 ### Casos e Evolucao
 
 - Somente ao trabalhar na RocketHub ou consultar aquele exemplo:
   [Caso RocketHub](references/casos/rockethub.md).
 - Exemplo aprovado de convite em duas cameras, pausas e sobreposicao fonetica:
   [Convite em duas cameras](references/casos/convite-duas-cameras.md).
+- Somente quando o briefing pedir Rugido/CPL ou suas referencias H001-H032:
+  [Cortes Rugido no CapCut](references/casos/rugido-cortes-capcut.md).
 - Quando o usuario pedir para ensinar um estilo ou incorporar feedback:
   [Evoluir a biblioteca](references/fluxos/evoluir-biblioteca.md).
 
-Se a skill `cortes-base` ou `capcut-cortes-base` estiver instalada, use suas
-referencias para refino fonetico detalhado. Nao e dependencia obrigatoria: o
-essencial independente de ferramenta esta no modulo de referencia e montagem.
-Use a skill especifica do editor apenas quando operar aquele editor.
+O conhecimento de `cortes-base`, `capcut-cortes-base` e `capcut-cortes-rugido`
+esta integrado nos modulos acima. Esta skill funciona sem essas tres instaladas;
+as originais continuam disponiveis e nao foram substituidas ou removidas.
+Para manutencao, consulte [Origem e integracao](references/fluxos/integracao-cortes.md).
+Ferramentas/editor precisam estar disponiveis para executar, nao apenas documentados.
 
 ## Fluxo de Trabalho
 

@@ -10,7 +10,9 @@ seu historico e os enderecos existentes.
 Uma skill principal coordena os modulos internos e le apenas o necessario.
 Modulos nao sao agentes nem skills com invocacao automatica: sao instrucoes
 especializadas explicitamente ligadas pela entrada principal. Skills independentes
-podem coexistir no repositorio; o motor `capcut-cortes-base` continua separado.
+podem coexistir no repositorio. O conhecimento de `cortes-base`,
+`capcut-cortes-base` e `capcut-cortes-rugido` esta integrado em `edicao-video-ia`,
+incluindo o analisador de waveform. As skills originais continuam disponiveis.
 
 A estrutura usa referencias e carregamento progressivo descritos na
 [documentacao oficial de skills](https://learn.chatgpt.com/docs/build-skills).
@@ -56,16 +58,26 @@ edicao-video-ia/
   references/
     tecnicas/
       referencia-e-montagem.md
+      limpeza-e-cadencia.md
+      multicamera-por-olhar.md
       direcao-musical.md
       motion-e-hierarquia.md
     estilos/
       depoimentos-abertura-live.md
       talking-head.md
+      cortes-live-por-tese.md
     casos/
       rockethub.md
+      convite-duas-cameras.md
+      rugido-cortes-capcut.md
     fluxos/
       entrega-e-qa.md
       evoluir-biblioteca.md
+      capcut-editavel.md
+      criado-ffmpeg-editavel.md
+      legendas-audio-final.md
+      integracao-cortes.md
+  scripts/analisar_waveform_silencios.py
   evals/evals.json
 ```
 
@@ -80,7 +92,8 @@ npx skills add https://github.com/lucassantiagopsae-dotcom/capcut-cortes-base --
 
 Ao migrar do nome antigo, preserve eventuais mudancas locais e retire a copia
 antiga da descoberta ativa para evitar duas versoes divergentes. A skill geral
-funciona sozinha; a skill de cortes e um complemento para trabalho no CapCut.
+funciona sozinha, inclusive para corte tecnico e os fluxos editaveis documentados;
+as outras skills nao sao dependencias de instalacao.
 
 Exemplos de uso:
 
@@ -100,13 +113,15 @@ um video nao treina automaticamente o modelo nem atualiza a skill sozinho.
 
 ## Atualizar o Motor de Cortes
 
-Quando um novo aprendizado de corte aparecer, atualize:
+Ao manter a skill independente `capcut-cortes-base`, atualize:
 
 1. `capcut-cortes-base/SKILL.md` se for regra geral;
 2. `capcut-cortes-base/references/` se for detalhe tecnico;
 3. `capcut-cortes-base/evals/evals.json` se valer a pena testar o comportamento.
 
-Para trilha, animacao ou entrega audiovisual, atualize a referencia correspondente
+Para a biblioteca principal, siga o
+[mapa de integracao](edicao-video-ia/references/fluxos/integracao-cortes.md).
+Atualize corte, trilha, animacao ou entrega na referencia correspondente
 em `edicao-video-ia/references/` e acrescente um cenario de regressao quando
 necessario. Mantenha o `SKILL.md` como entrada curta, com leitura sob demanda.
 

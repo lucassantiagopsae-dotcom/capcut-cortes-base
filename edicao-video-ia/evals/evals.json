@@ -90,6 +90,56 @@
       "id": 18,
       "prompt": "Aplicou reducao de ruido e equalizacao na voz dessa sala e mediu que nao clipa. Pode dizer que tirou o eco e ouviu as emendas?",
       "expected_output": "Distingue ruido e reverberacao e relata somente o tratamento e as verificacoes feitos. Ausencia de clipping nao prova naturalidade nem remocao de eco; nao alega escuta inexistente."
+    },
+    {
+      "id": 19,
+      "prompt": "Instalei apenas edicao-video-ia. Limpa pausas e dois falsos arranques desta aula horizontal de 18 minutos no meu projeto Criado, sem titulo ou legenda.",
+      "expected_output": "Usa limpeza-e-cadencia e criado-ffmpeg-editavel internos, mantem fontes completas e parametros recuperaveis, sem depender das tres skills de corte externas. Preserva horizontal e estrutura da aula, nao migra para CapCut nem impoe formato/duracao Rugido."
+    },
+    {
+      "id": 20,
+      "prompt": "No CapCut, a ponte B inicia em 4 e termina em 7; C comeca em 6.8 por overlap. Encurtei B em 1 segundo, mas C ficou parado. Corrige mantendo a sobreposicao e sem mexer no titulo aprovado.",
+      "expected_output": "Recalcula sucessores pela ordem editorial: B termina em 6 e C deve iniciar em 5.8 para preservar overlap de 0.2. Nao seleciona sucessores apenas por start >= 7; atualiza duracoes de pais e camadas temporalmente dependentes, sem redesenhar titulo."
+    },
+    {
+      "id": 21,
+      "prompt": "Apliquei fade em um microcorte por JSON e apareceu nos outros. O material_id e compartilhado. O projeto ja e meu, nao crie outro.",
+      "expected_output": "Identifica onde a versao local armazena fade, isola o material somente quando necessario e atualiza a referencia do segmento alvo. Preserva mesmo draft, backup e demais campos; confere outros segmentos e o campo real aplicado, nao apenas o mapa."
+    },
+    {
+      "id": 22,
+      "prompt": "Exporta meu draft CapCut: os compostos referenciam subdrafts por extra_material_refs, e o titulo PNG tem transform.y=0.56. Nao mude o layout.",
+      "expected_output": "Monta indice global e atravessa compostos com offsets/velocidades dos pais. Inspeciona transformacoes; usa normalizacao pela metade do canvas somente no caso simples correspondente, sem generaliza-la a rotacao/pais. Confere tamanho exibido e render contra draft."
+    },
+    {
+      "id": 23,
+      "prompt": "Use o padrao Rugido para montar o H020 de uma live: ha tres exemplos crescentes e o corte atual termina no segundo. Quero draft CapCut, sem MP4 ainda.",
+      "expected_output": "Seleciona estilo cortes-live-por-tese, caso Rugido e CapCut editavel; busca fechamento cronologico que inclua a etapa decisiva, sem cortar para obedecer duracao rigida. Preserva projeto humano, protege microcortes em composto e entrega draft sem exportacao final nao solicitada."
+    },
+    {
+      "id": 24,
+      "prompt": "Minha entrevista de outra marca ja esta editada no CapCut em 1920x1080. Quero apenas corrigir uma cauda no audio; nao e Rugido nem reels.",
+      "expected_output": "Usa tecnica neutra e fluxo CapCut, preserva canvas/editor/montagem. Nao importa amarelo, Aveny, 27 caracteres, 1-2 minutos, titulo de topo ou precomposicao desnecessaria."
+    },
+    {
+      "id": 25,
+      "prompt": "No H010 eu refinei varios cortes, mas o texto e a duracao final ficaram praticamente iguais. Reaproveita a legenda antiga sem recalcular?",
+      "expected_output": "Explica que mudancas internas podem deslocar cues mesmo com duracao/texto semelhantes. Le a montagem atual e remapeia ou transcreve o audio final com o servico autorizado, preservando o estilo aprovado e validando cada trecho afetado."
+    },
+    {
+      "id": 26,
+      "prompt": "O draft aberto tem .locked, versoes diferentes em Timelines e um .bak anterior ao meu ajuste humano. Arruma o JSON para abrir certo sem perder o que fiz.",
+      "expected_output": "Evita escrita concorrente, identifica estado autoritativo e preserva snapshots/backup. Nao sincroniza cegamente espelhos nem restaura o .bak sobre ajuste humano recente. Verifica referencias, projeto e limite da verificacao se nao puder abrir no editor."
+    },
+    {
+      "id": 27,
+      "prompt": "Quero usar a skill para um documentario com pausas dramaticas. O script de RMS encontrou 12 trechos baixos. Pode remover todos e usar o estilo Rugido para ficar mais inteligente?",
+      "expected_output": "Trata deteccoes como candidatos, preserva pausas intencionais e aplica briefing do documentario. Nao considera maior numero de cortes ou mais modulos sinal de qualidade; nao forca estilo Rugido por causa da disponibilidade."
+    },
+    {
+      "id": 28,
+      "prompt": "Meu renderer FFmpeg precisa de arquivos temporarios, mas o projeto Criado tem que continuar editavel, com margem para eu recuperar palavras nas bordas.",
+      "expected_output": "Separa caches de export da fonte de verdade: mantem midia completa e parametros de corte no projeto, sem substituir por MP4s dos recortes. Verifica paridade preview/render e nao implementa um editor novo ou promete efeitos editaveis ausentes sem escopo."
     }
   ]
 }

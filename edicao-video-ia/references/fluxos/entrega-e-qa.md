@@ -18,6 +18,11 @@ Se apenas a trilha mudou, nao modifique cortes, zooms ou duracao da fala. Se a
 montagem mudou, recalcule os tempos de musica e visuais pelo novo mapa, em vez de
 reutilizar timestamps antigos sem conferir.
 
+Uma duracao total quase identica nao garante as mesmas bordas internas. Depois
+de refino humano, leia o estado atual, compare source/target e invalide QA e
+legendas das partes afetadas. Para audio/retiming de legenda, consulte
+[Legendas do audio final](legendas-audio-final.md).
+
 ## Registro Reproduzivel
 
 Para trabalho com varias camadas, mantenha um manifesto simples com:
@@ -66,3 +71,8 @@ musica, SFX, texto e elementos visuais, respeitando o editor escolhido. Compare
 timeline e render final, inclusive compostos. Preserve backups e edicoes humanas.
 Explique quais efeitos permanecem editaveis e quais precisaram ser pre-renderizados;
 nao prometa texto, tracado ou curvas editaveis quando so existe um video alpha.
+
+Para schema, compostos, espelhos e recuperacao, leia [CapCut editavel](capcut-editavel.md).
+Para projeto parametrico com fontes recuperaveis, leia
+[Criado e FFmpeg](criado-ffmpeg-editavel.md). Os dois fluxos preservam a escolha
+do editor; instalar a skill geral nao autoriza migrar projetos existentes.
