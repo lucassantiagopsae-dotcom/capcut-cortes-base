@@ -30,6 +30,15 @@ e sobreposicao. Para cada transicao, escolha manter, estender fala continua,
 mover bordas, remover vazio ou sobrepor margens foneticas. Confira ambos os lados
 e tambem o material descartado. Nao force a segunda tentativa como correta.
 
+Em fala comercial compacta, uma emenda pode ganhar continuidade quando o ataque
+da proxima take entra durante a cauda de baixa energia da anterior. Aplique isso
+por juncao e por fonema: preserve a palavra inteira, evite duas silabas fortes ao
+mesmo tempo e mantenha voz em faixas simultaneas durante o overlap real. O caso
+DD Prime aprovou overlaps curtos de 30-40 ms em quatro juncoes e nenhum overlap
+nas duas entradas finais; esses numeros sao evidencia daquele audio, nao receita.
+O corte visual pode cair no meio do room tone sobreposto, desde que boca, gesto e
+continuidade nao denunciem a troca.
+
 Palavras curtas no ataque requerem margem real antes do som; pre-silencio longo
 nao e margem fonetica. Uma palavra curta seguida de espera e depois outra frase
 pode exigir dois clipes, em vez de eliminar a palavra curta. Na saida, retire
@@ -74,6 +83,18 @@ parametros iniciais; ruido, fricativas e respiracao exigem interpretacao. Os
 spans de saida usam tempos absolutos da fonte, incluindo o offset de `--start`.
 Nao envie audio a outro servico por causa da existencia de uma chave: respeite
 a escolha e a autorizacao ja dadas no trabalho atual.
+
+Para entregas curtas de Instagram/Reels, rode tambem a auditoria no MP4 final:
+
+```powershell
+python scripts/auditar_cadencia_reels.py "pasta-da-entrega" --output "qa-cadencia.json"
+```
+
+Na referencia Lucas/Rugido, spans internos de baixa energia a partir de `0.60 s`
+exigem revisao e spans a partir de `0.90 s` bloqueiam a entrega ate escuta ou
+correcao. Esses limiares sao um gate de triagem para fala pausada em video curto,
+nao autorizacao para apagar automaticamente respiracao, enfase ou pausa expressiva.
+Se uma pausa bloqueada for mantida, registre o motivo editorial no QA.
 
 ## Cobertura
 

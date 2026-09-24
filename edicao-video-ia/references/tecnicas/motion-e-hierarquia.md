@@ -14,6 +14,13 @@ Defina por cue: sentido, timing, lado, texto, icone/diagrama e animacao. Em talk
 head, use a area livre ao lado quando esse for o briefing. Confira todos os
 enquadramentos daquele cue: um rosto pode entrar no espaco durante um zoom.
 
+Quando o ambiente faz parte do valor do video, trate-o como conteudo, nao como
+fundo descartavel. Posicione ilustracoes compactas na altura do ombro e alterne
+o lado conforme rosto, gesto e espaco negativo. Evite a faixa superior quando ela
+descola a explicacao da pessoa ou cobre arquitetura importante. A ilustracao deve
+acompanhar o timestamp da ideia: construir, relacionar, concluir e sair, em vez de
+aparecer pronta como um adesivo estatico.
+
 Ao pedir mais elementos, revise a cobertura das ideias em todo o video. Nao
 concentre tudo na abertura nem imponha um efeito a cada N segundos. Olhe densidade,
 tempo de leitura e trechos vazios por bloco. A pausa visual tambem tem funcao.
@@ -34,6 +41,12 @@ Para texto solto, escolha cor por fundo e consistencia do sistema, com sombra
 discreta apenas quando ajudar. Nao misture contorno preto grosso em alguns cues
 e texto sem contorno em outros sem criterio. Antes de acrescentar uma placa,
 tente reposicionar, reduzir ruido local ou escolher contraste adequado.
+
+Se a filmagem varia muito, contraste local pode vir de uma pequena base translucida,
+de um scrim direcional ou de uma zona naturalmente limpa. Recortar a pessoa para
+colocar um gradiente atras dela e uma opcao somente quando a mascara permanece
+estavel em movimento; artefatos de cabelo e borda custam mais credibilidade do que
+o ganho de contraste. Nao escureca o imovel inteiro para salvar um icone pequeno.
 
 ## Tipografia Composta, Nao Distribuida
 

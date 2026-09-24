@@ -44,9 +44,11 @@ para compensar falta de conclusao. Revalide titulo e legenda apos refino.
 Preserve partes humanas aprovadas e registre por que falas entraram/sairam,
 source, timeline e emendas. Gancho ainda nao escolhido exige selecao editorial
 antes da montagem, dentro do escopo autorizado; uma skill de garimpo disponivel
-pode ajudar, mas nao e dependencia para compreender este modulo.
+pode ajudar, mas nao e dependencia para compreender este modulo. Para garimpo
+completo de live longa, use [Curadoria detalhada](../fluxos/curadoria-live-detalhada.md).
 
-Use o editor e o formato pedidos. Preferencias de CPL/H004/H005 e outros cortes
-Rugido ficam no [caso Rugido](../casos/rugido-cortes-capcut.md). Para legendas e
+Use o editor e o formato pedidos. O metodo editorial Lucas/Rugido fica em
+[Metodo Lucas Felix](../casos/rugido-lucas-felix.md); detalhes historicos de
+drafts CapCut ficam no [caso CapCut](../casos/rugido-cortes-capcut.md). Para legendas e
 exportacao, consulte [Legendas do audio final](../fluxos/legendas-audio-final.md)
 e [Entrega e QA](../fluxos/entrega-e-qa.md).

@@ -1,10 +1,11 @@
-# Caso Rugido: Cortes no CapCut
+# Caso Rugido: Execucao no CapCut
 
 Conhecimento integrado de `capcut-cortes-rugido`, incluindo sua entrada e as
 16 referencias operacionais consultadas. Os estados e aprovacoes abaixo foram
 relatados nas fontes; os drafts antigos nao foram reabertos nesta integracao.
-Nao inclui midias, caminhos privados ou ativos de fonte. Use quando o briefing
-pedir Rugido/CPL ou esses exemplos, nunca como padrao global da biblioteca.
+Nao inclui midias, caminhos privados ou ativos de fonte. Use para executar
+Rugido/CPL no CapCut ou consultar esses exemplos; o metodo editorial valido
+tambem fora do CapCut esta em [Metodo Lucas Felix](rugido-lucas-felix.md).
 
 ## Linguagem e Processo
 

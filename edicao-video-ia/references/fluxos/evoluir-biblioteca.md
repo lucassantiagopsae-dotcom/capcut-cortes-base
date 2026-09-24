@@ -33,6 +33,15 @@ Nao converta um render bem-sucedido em aprovacao estetica nem uma sugestao em
 regra definitiva. Ao revisar uma regra antiga, preserve a intencao e explique a
 condicao que mudou; prefira resolver a contradicao a acumular instrucoes opostas.
 
+Se o Criado registrar uma sessao, use historico de acoes, timeline antes/depois,
+estado final, anotacoes e confirmacao humana como evidencias complementares.
+Um diff de `duration` isolado nao demonstra motivacao editorial. Associe a
+regra candidata ao video/modelo/grupo, versao, fonte, intervalos, acao,
+intencao inferida, excecoes e resultado observado. Distinga inferencia da fala
+explicita do usuario. Reforce uma regra existente quando for o mesmo criterio;
+nao crie uma skill por video ou por revisao. So promova uma preferencia local
+para tecnica geral quando houver evidencia de transferencia para outros casos.
+
 ## Adicionar um Estilo
 
 Crie um arquivo em `references/estilos/` com nome claro e conteudo sustentado pelo

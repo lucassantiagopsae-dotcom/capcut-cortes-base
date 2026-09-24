@@ -140,6 +140,81 @@
       "id": 28,
       "prompt": "Meu renderer FFmpeg precisa de arquivos temporarios, mas o projeto Criado tem que continuar editavel, com margem para eu recuperar palavras nas bordas.",
       "expected_output": "Separa caches de export da fonte de verdade: mantem midia completa e parametros de corte no projeto, sem substituir por MP4s dos recortes. Verifica paridade preview/render e nao implementa um editor novo ou promete efeitos editaveis ausentes sem escopo."
+    },
+    {
+      "id": 29,
+      "prompt": "Garimpa todos os ganchos dessa aula do Lucas e me mostra um atlas para eu aprovar. Nao cria os videos ainda.",
+      "expected_output": "Usa atlas e curadoria junto do metodo Lucas, cobre a fala do material solicitado, registra fonte/timecodes, abertura literal, tensao e possibilidade de corpo/payoff. Para na selecao humana; nao monta, legenda ou renderiza."
+    },
+    {
+      "id": 30,
+      "prompt": "Aprovei H003 e H005. Monta os dois cortes da live do Lucas diretamente no Criado, com camadas editaveis. Quero usar nosso metodo de corte, nao CapCut.",
+      "expected_output": "Aplica metodo Lucas e tecnicas neutras de tese/cadencia, executa no fluxo Criado com midia completa e timeline parametrica. Nao exige outra aprovacao de gancho, nao migra para CapCut nem chama MP4 unico de editavel."
+    },
+    {
+      "id": 31,
+      "prompt": "Vamos fazer o H020 no CapCut. O terceiro exemplo fecha a tese; mantenha os compostos e ajuste a legenda depois dos microcortes.",
+      "expected_output": "Combina metodo Lucas, caso historico CapCut, fluxo CapCut editavel e legenda do audio final. Preserva terceiro exemplo, compostos e draft humano; recalcula cues apos a montagem sem tratar CapCut como caminho antigo."
+    },
+    {
+      "id": 32,
+      "prompt": "Me entrega cinco reels dessa mesma aula: dois ganchos diferentes terminam no mesmo exemplo e repetem quase todo o corpo. Pode contar como cinco?",
+      "expected_output": "Compara teses e intervalos-fonte entre candidatos, identifica alternativas redundantes e entrega lote menor/diverso ou sinaliza falta de material. Nao cumpre a quota com quase duplicatas."
+    },
+    {
+      "id": 33,
+      "prompt": "Nesse corte do Lucas ja montado, gera a legenda na tela e uma copy para postar. O texto mudou pouco, mas eu mexi nos overlaps e nao quero letra italica.",
+      "expected_output": "Reconstroi ou remapeia audio final e tempos word-level com provedor autorizado, revalida apos overlaps e agrupa por sentido. Usa TASA Orbiter Bold sem italico no padrao aprovado e separa legenda falada da copy editorial, sem inventar CTA."
+    },
+    {
+      "id": 34,
+      "prompt": "Aprendeu com minha edicao de ontem que 1.15x ficou bom. Coloca isso em todos os videos de todos os clientes e cria uma skill nova para cada um?",
+      "expected_output": "Registra 1.15x como evidencia contextual da Aula Segunda e nao como regra geral. Atualiza modulo existente com condicao, excecao e aprovacao; evita skills duplicadas por video/cliente e nao propaga velocidade automaticamente."
+    },
+    {
+      "id": 35,
+      "prompt": "No atlas Rugido marquei o nucleo em negrito, mas nao votei ainda. A frase e um payoff que so faz sentido depois de uma historia. Pode aprovar e gerar o corte?",
+      "expected_output": "Negrito marca limite do nucleo, nao aprovacao. Rejeita ou retira da lista de cold opens o payoff dependente e espera decisao humana se o pedido era apenas atlas; nao gera corte."
+    },
+    {
+      "id": 36,
+      "prompt": "Garimpa uma live de 90 minutos para cinco cortes. Achei tres bons nos primeiros dez minutos; pode parar a busca?",
+      "expected_output": "Audita o material inteiro em capitulos, registra intervalos candidatos/observacao/descarte e motivo, depois ranqueia lote diverso; nao afirma melhores da live por amostra inicial."
+    },
+    {
+      "id": 37,
+      "prompt": "No CapCut novo quero um corte Lucas H005 com a tese fechada e o mesmo projeto editavel. Nao use o Criado desta vez.",
+      "expected_output": "CapCut e caminho valido atual, nao legado. Usa metodo Lucas, caso CapCut e fluxo de draft editavel; preserva projeto humano, cronologia e fechamento, sem migrar para Criado."
+    },
+    {
+      "id": 38,
+      "prompt": "Eu movi clipes no Criado enquanto a IA preparava o comando e deu conflito de revisao 409. Tambem deixei anotacao no clip. Continua.",
+      "expected_output": "Rele projeto/revisao/contexto/anotacao, reconcilia a alteracao humana e so reaplica comandos compativeis na revisao atual; nao aumenta numero cegamente nem marca anotacao resolvida sem verificar."
+    },
+    {
+      "id": 39,
+      "prompt": "Crie a legenda falada e a copy do post para esse corte Lucas. A chave do Assembly nao esta acessivel; nao use Whisper sem me perguntar.",
+      "expected_output": "Separa cues da fala de copy editorial, verifica transcricao confiavel existente e autorizacao para provedor. Nao usa Whisper nem upload silencioso; informa dependencia real. Copy nao e publicacao e nao inventa CTA."
+    },
+    {
+      "id": 40,
+      "prompt": "Este cliente nao e Lucas. Quer apenas legendas editaveis no CapCut, mantendo a fonte e cor aprovadas no draft. Os cortes nao mudaram.",
+      "expected_output": "Usa legenda por audio final e CapCut editavel, preserva estilo do cliente e cortes aprovados; nao aplica TASA amarelo, Aveny, 1.15x ou copy Rugido."
+    },
+    {
+      "id": 41,
+      "prompt": "Achei uma frase melhor no meio da live. Remonta o corte para abrir com ela, mesmo que a ordem possa mudar a relacao de causa e efeito.",
+      "expected_output": "Testa a abertura no contexto, mas nao faz remontagem que distorce sentido ou cria causalidade falsa. Pode manter ordem, procurar ponte real ou marcar alternativa/regravacao, registrando decisao editorial."
+    },
+    {
+      "id": 42,
+      "prompt": "Tenho um talking head vertical para anuncio imobiliario. O apresentador esta pequeno, a casa precisa continuar aparecendo, quero tracking no rosto, zooms perceptiveis, motions discretos dos lados e legenda fora da interface do Instagram.",
+      "expected_output": "Seleciona talking-head, tracking/reenquadramento, motion, legenda e QA. Define escala-base suficiente com headroom, filtra o tracking e usa zooms por ideia; preserva arquitetura, posiciona ilustracoes breves na altura do ombro com contraste local e pouco texto, e valida legenda em safe zone simulada. Nao copia coordenadas, fonte ou paleta da DD Prime sem referencia atual."
+    },
+    {
+      "id": 43,
+      "prompt": "Vou pedir varias revisoes desse video. A cada render novo, sobe no ClickUp e troca o status; quando eu aprovar de verdade eu aviso.",
+      "expected_output": "Reconhece que o usuario explicitamente adiou a entrega final, mantem versoes locais durante as revisoes e nao comenta, anexa ou muda status a cada render. Quando houver autorizacao final, verifica conta, destino, integridade e confirma a entrega antes do status."
     }
   ]
 }

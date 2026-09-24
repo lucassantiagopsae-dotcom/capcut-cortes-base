@@ -55,11 +55,31 @@ usuario queira editabilidade posteriormente.
    do overlay, alpha, fontes e os piores fundos claros/escuros.
 6. Confira cobertura por take. Nao declare video inteiro revisado com base apenas
    em tres screenshots. Se houver apenas amostragem, diga qual foi o alcance.
+7. Em Instagram/Reels de fala, rode o gate de cadencia no MP4 final. Revise toda
+   baixa energia interna a partir de `0.60 s`; na referencia Lucas/Rugido, uma
+   pausa de `0.90 s` ou mais bloqueia a entrega ate ser ouvida, corrigida ou
+   justificada como expressiva. Duracao, legenda e tese corretas nao substituem
+   essa passada de ritmo.
 
 Contact sheets aceleram revisao estatica, mas nao demonstram fluidez. Alpha em
 cantos transparentes ajuda a detectar painel acidental, mas nao substitui olhar
 o conjunto. Sem capacidade de ouvir/ver movimento, entregue apenas as conclusoes
 suportadas e indique a revisao perceptiva pendente.
+
+## Entrega Externa e Rodadas de Revisao
+
+Gerar uma nova versao local nao autoriza anexar, comentar ou mudar status em
+ClickUp, Drive ou outro sistema. Durante feedback iterativo, mantenha as versoes
+locais e mostre a revisao pelo canal combinado. Envie externamente apenas quando
+o usuario pedir a entrega ou quando uma autorizacao anterior cobrir claramente
+aquela rodada. Isso evita poluir a task com cada ajuste intermediario.
+
+Na entrega final autorizada, confirme identidade/conta, pasta do cliente, arquivos
+e integridade da copia antes de comentar na task. Se anexos estiverem bloqueados
+por armazenamento e o usuario autorizar Drive, envie para a pasta correta, use o
+link como entrega oficial, confirme o comentario pelo usuario esperado e so entao
+aplique o status solicitado. Link criado nao prova permissao de acesso; confira o
+contexto de compartilhamento disponivel sem tornar material publico por padrao.
 
 ## Editavel Quando Solicitado
 

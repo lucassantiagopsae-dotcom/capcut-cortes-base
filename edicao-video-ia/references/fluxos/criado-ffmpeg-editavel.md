@@ -1,10 +1,19 @@
 # Criado e FFmpeg Editavel
 
-Use quando o usuario escolher Criado, ja houver projeto nele, ou o fluxo atual
-usar uma timeline parametrica e FFmpeg. Nao migre um draft CapCut ou outro editor
-por preferencia da skill. Um MP4 solicitado isoladamente nao exige criar editor.
+Use quando o usuario escolher Criado, ja houver projeto nele, ou solicitar um
+MP4 local gerado com FFmpeg. Nao migre um draft CapCut ou outro editor por
+preferencia da skill. Um MP4 solicitado isoladamente nao exige criar editor.
 
-## Fonte de Verdade
+## FFmpeg sem projeto Criado
+
+Quando a entrega e so um arquivo local, monte um mapa reproduzivel com fonte,
+in/out, ordem, velocidade, audio, transformacoes, legenda e titulo conforme o
+escopo. Renderize com FFmpeg, preserve originais e confira o MP4 final. Nao
+prometa uma timeline editavel que nao foi criada. Se o usuario pedir editavel
+posteriormente, converta o mapa em camadas no editor escolhido, sem usar o MP4
+final como unica fonte.
+
+## Fonte de Verdade no Criado
 
 O projeto parametrico e a fonte de verdade; MP4 e derivado. Importe a midia
 completa e represente cada corte com referencia a fonte, in/out, inicio/duracao
@@ -27,8 +36,10 @@ render nao substituem editabilidade. Texto queimado ou um MP4 unico importado
 nao equivalem a camadas editaveis de legenda, titulo, fala e efeitos.
 
 Se o recurso necessario nao existe no editor, procure representacao suportada e
-informe o limite. Implementar controles, API ou novos efeitos no aplicativo so
-faz parte do trabalho se o usuario tiver autorizado desenvolver o editor.
+informe o limite. Se o pedido exige uma edicao editavel no Criado e a funcao
+ausente e indispensavel, confirme o escopo tecnico do projeto antes de
+implementa-la de forma delimitada. Um pedido apenas de MP4 nao autoriza criar
+controles, API ou efeitos no aplicativo.
 
 ## Aplicacao
 

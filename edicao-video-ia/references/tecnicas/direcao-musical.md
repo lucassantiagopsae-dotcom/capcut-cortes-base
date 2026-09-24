@@ -14,6 +14,12 @@ Musica alegre pode contrariar uma dificuldade ainda nao resolvida. Letras e
 melodias muito presentes podem competir com a fala. Uma mesma composicao pode
 oferecer blocos suficientes; nao e necessario trocar de musica a cada pessoa.
 
+Em anuncio curto, a trilha tambem sustenta a vontade de continuar assistindo.
+Se a base soa inerte sob uma fala comercial, procure pulso, progressao e pequenas
+viradas que deem direcao sem transformar o video em trailer. Julgue a energia com
+a voz e a imagem: aumentar ganho de uma faixa sem arco nao corrige uma musica
+sem impulso, e trocar por uma faixa agressiva pode destruir a autoridade do porta-voz.
+
 Mapeie cada cue na timeline final: inicio/fim, trecho de fonte, funcao emocional,
 nivel, automacao e relacao com os cues vizinhos. Alinhe chegadas musicais a ideias
 reais sem antecipar visualmente uma conquista que ainda nao foi narrada.
@@ -59,6 +65,10 @@ Confira o inicio real: o cue pode comecar em zero e ainda conter segundos mudos
 na fonte ou um fade inaudivel. Quando o briefing pede musica desde a abertura,
 escolha um trecho ativo e uma entrada audivel sem estalo. Confira tambem a cauda
 final para nao interromper a ultima palavra nem cortar a resolucao musical.
+
+Antes da aprovacao, assista ao primeiro terco e ao fechamento sem olhar a waveform:
+o primeiro precisa engatar cedo e o ultimo precisa parecer destino, nao simples
+fim do arquivo. Depois confira loudness, true peak e ducking como protecoes tecnicas.
 
 Nao reutilize um valor fixo de ganho entre faixas com loudness diferente. Meca
 loudness e true peak da mixagem final conforme o destino; esses numeros nao

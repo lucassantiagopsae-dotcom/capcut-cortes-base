@@ -28,6 +28,9 @@ Decisoes especificas solicitadas durante a revisao:
 - Cabecalho e destaque mais proximos, alinhamento comum e iniciais maiusculas;
   caixa-alta apenas em enfases selecionadas. Sem contornos inconsistentes.
 - Gerar novas versoes MP4; CapCut somente quando solicitado explicitamente.
+- Nos cortes verticais destinados a anuncio, reservar a faixa inferior para a
+  descricao, controles nativos e botao de CTA. Recalcular a area segura para o
+  enquadramento atual em vez de copiar coordenadas de outro projeto.
 
 O ajuste inicial de referencia em 1080p aumentou tile de 84 para 112px, glifo de
 54 para 76px e cabecalho de 34 para 38px, com destaque de 56px em um overlay de
