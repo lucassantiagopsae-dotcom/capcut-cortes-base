@@ -166,6 +166,15 @@ cruze essas evidencias antes da primeira montagem; o objetivo operacional e
 antecipar os ajustes recorrentes e aumentar a chance de aprovacao na primeira
 revisao, sem transformar os parametros numericos deste caso em constantes.
 
+Em 28/09/2026, ao pedir a revisao do lote seguinte (`L21-C16` a `L21-C20`),
+o usuario reforcou como regra explicita que os cortes e overlaps devem preservar
+o `bico` no inicio das frases. Trate o bico como o ataque acustico real do
+primeiro fonema: mantenha pre-roll suficiente antes dele e nao posicione a
+fronteira apenas no timestamp textual do ASR. A escadinha pode antecipar o novo
+take sobre a cauda anterior, mas nunca as custas de amputar a consoante, vogal
+ou transiente que faz a frase entrar inteira. Confirme essa margem na waveform
+e, quando disponivel, pela escuta humana.
+
 Em 28/09/2026, o usuario declarou que esse pacote aprovado deveria ser aplicado
 proativamente aos quatro cortes restantes do lote, sem esperar que os mesmos
 erros fossem apontados video por video. A montagem de `L21-C12` a `L21-C15`
@@ -275,3 +284,22 @@ CapCut H001-H032 esta em [Caso CapCut](rugido-cortes-capcut.md); leia-o so
 quando o projeto for CapCut ou aquele exemplo for relevante. No Criado, mantenha
 timeline editavel e FFmpeg como render derivado. Em FFmpeg avulso, preserve
 mapa, fonte e comandos reproduziveis sem prometer camadas editaveis.
+
+Em 28/09/2026, no arco `L21-C16` a `L21-C20`, o usuario pediu um experimento
+editorial adicional: preservar os cinco microcortes por ponto de atencao e
+produzir tambem uma versao longa unica para o mesmo dia, porque os cinco trechos
+faziam parte de uma explicacao maior. A versao `L21-LONG01` recompoe em ordem
+cronologica o arco `relevancia -> ruptura -> rediagnostico -> direcao ->
+consciencia -> confianca`, sem simplesmente concatenar MP4s com titulos
+diferentes.
+
+Depois de ver o resultado, o usuario promoveu explicitamente esse experimento a
+regra do metodo: sempre que o mapeamento de ganchos fragmentar uma explicacao
+maior, completa e coerente em varios pontos de atencao, mantenha os microcortes e
+gere tambem o video completo. Planeje a versao longa para o mesmo dia dos
+fragmentos, de modo que o feed possa oferecer tanto as entradas curtas quanto o
+raciocinio inteiro. A regra depende de existir um arco maior real; nao estique
+falas independentes nem junte pecas apenas porque vieram da mesma live. Monte a
+versao longa a partir das fontes, com titulo, legenda, cadencia e fechamento
+proprios, preservando cronologia e eliminando duplicacoes causadas pela quebra em
+microganchos.

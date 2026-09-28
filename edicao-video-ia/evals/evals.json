@@ -220,6 +220,11 @@
       "id": 44,
       "prompt": "Refina este corte de live do Lucas. A waveform parece continua, mas ele repete a mesma ideia e deixa 'tipo assim', 'entendeu' e dois falsos arranques. Depois compacte as pausas em escadinha.",
       "expected_output": "Faz primeiro uma passada editorial completa, removendo falsos arranques, redundancias e muletas sem funcao sem reescrever a fala; registra o que manteve quando houver funcao retorica. So depois ajusta pausas, ataques, caudas e overlaps no corte inteiro, recalculando timeline e legendas. Nao considera waveform continua prova de texto limpo nem tenta esconder redundancia apenas com velocidade."
+    },
+    {
+      "id": 45,
+      "prompt": "Mapeei cinco ganchos do Lucas dentro de uma explicacao unica. Os microcortes ja fecham pontos separados e vao sair amanha. Finaliza o lote seguindo o que aprendemos.",
+      "expected_output": "Mantem os microcortes como pecas complementares e identifica se a fonte sustenta um arco maior autonomo. Quando sustenta, gera tambem a versao longa para o mesmo dia a partir das fontes e da cronologia, com abertura, cadencia, titulo, legenda e fechamento proprios. Nao apenas concatena MP4s, nao duplica ganchos/titulos e nao inventa um arco quando os trechos sao independentes."
     }
   ]
 }

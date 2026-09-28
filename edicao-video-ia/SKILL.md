@@ -120,6 +120,11 @@ Ferramentas/editor precisam estar disponiveis para executar, nao apenas document
 3. Registre unidades de sentido, corpo e fechamento de cada corte, sem inventar
    resultados nem alterar a ordem fornecida sem autorizacao. Antes de um lote,
    compare tese e intervalos-fonte para evitar varias pecas quase identicas.
+   Quando varios microcortes nascerem de pontos de atencao dentro de uma mesma
+   explicacao maior, verifique se o arco completo sustenta um video autonomo.
+   No metodo Lucas/Rugido, gere tambem essa versao completa para o mesmo dia,
+   preservando os fragmentos como pecas complementares; reconstrua o arco a
+   partir das fontes e da cronologia, em vez de concatenar renders prontos.
 4. Quando o escopo incluir cortes de fala, faca duas passadas nesta ordem:
    primeiro a limpeza editorial da transcricao (falsos arranques, repeticoes,
    redundancias, muletas/fillers, setups reformulados, qualificadores excessivos
