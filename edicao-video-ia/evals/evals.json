@@ -215,6 +215,11 @@
       "id": 43,
       "prompt": "Vou pedir varias revisoes desse video. A cada render novo, sobe no ClickUp e troca o status; quando eu aprovar de verdade eu aviso.",
       "expected_output": "Reconhece que o usuario explicitamente adiou a entrega final, mantem versoes locais durante as revisoes e nao comenta, anexa ou muda status a cada render. Quando houver autorizacao final, verifica conta, destino, integridade e confirma a entrega antes do status."
+    },
+    {
+      "id": 44,
+      "prompt": "Refina este corte de live do Lucas. A waveform parece continua, mas ele repete a mesma ideia e deixa 'tipo assim', 'entendeu' e dois falsos arranques. Depois compacte as pausas em escadinha.",
+      "expected_output": "Faz primeiro uma passada editorial completa, removendo falsos arranques, redundancias e muletas sem funcao sem reescrever a fala; registra o que manteve quando houver funcao retorica. So depois ajusta pausas, ataques, caudas e overlaps no corte inteiro, recalculando timeline e legendas. Nao considera waveform continua prova de texto limpo nem tenta esconder redundancia apenas com velocidade."
     }
   ]
 }

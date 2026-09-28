@@ -49,7 +49,171 @@ campanha.
 
 O titulo visual e uma microtese, nao uma descricao neutra do assunto ou numero
 do exemplo. Forme uma frase completa com contexto, tensao e consequencia que
-o video realmente entrega. Use `Aveny T WEB`, branco, centralizado e proximo
+o video realmente entrega. Para Lucas, o titulo tambem precisa ter cara de
+gancho dirigido ao publico, e nao de titulo de capitulo. Sempre que a tese
+permitir, explicite para quem aquilo importa e a consequencia para essa pessoa,
+empresa ou operacao. Nao basta nomear o conceito. O exemplo aprovado em
+25/09/2026 foi `Nem o melhor vendedor salva sua empresa se a jornada comercial
+for ruim`, em substituicao a `O melhor vendedor nao salva uma jornada ruim`.
+Use o exemplo como criterio de intencao, nao como molde verbal obrigatorio.
+
+No L21-C07, tambem em 25/09/2026, o usuario rejeitou `A taxa do vendedor
+esconde a origem dos leads` e escolheu, entre as alternativas apresentadas,
+`Sua taxa de conversao e decidida antes da reuniao`. A escolha reforca como
+evidencia de marca a preferencia por uma microtese dirigida ao publico, com
+consequencia clara e uma lacuna de curiosidade. Como o usuario respondeu apenas
+`a primeira`, o motivo e inferido do contraste entre as copies, nao uma
+justificativa verbal explicita nem uma formula obrigatoria para todo titulo.
+
+No L21-C08, em 25/09/2026, o usuario aprovou o corte sem novo refino porque havia
+poucas pausas e o video ja comecava com o Lucas falando, formando um gancho forte
+desde o primeiro instante. Isso e evidencia de que, neste caso, entrada imediata
+na fala e cadencia compacta pesaram mais do que aplicar microcortes adicionais.
+O titulo visual ainda foi separado para uma nova rodada de refinamento; a
+aprovacao da montagem nao implica aprovacao automatica da copy no topo.
+Na rodada seguinte, o usuario preferiu manter temporariamente o titulo original
+`Call fria ou meses de conteudo nao sao as unicas opcoes` em vez de adotar uma
+das tres novas alternativas. Trate isso como decisao especifica do L21-C08, nao
+como rejeicao geral ao uso de segunda pessoa nem como regra para outros cortes.
+
+No L21-C09, em 25/09/2026, o usuario aprovou o video sem refino adicional e
+destacou especialmente o inicio conciso, com poucas pausas. Somado ao caso
+L21-C08, isso reforca como evidencia recorrente que o primeiro bloco deve entrar
+rapido na ideia; ainda assim, a abertura precisa preservar naturalidade e
+contexto, nao apenas minimizar silencio por medicao.
+
+No L21-C10, em 25/09/2026, o usuario apontou que a sequencia de varias frases
+curtas iniciadas por `tu` soava como uma rajada e que acelerar agravaria esse
+efeito. A V2 removeu duas formulacoes semanticamente redundantes, mas deixou o
+fragmento `Tu gera algumas` entre 9 e 11 segundos e por isso nao resolveu a
+rajada apontada. A V3 removeu esse fragmento identificado pelo AssemblyAI, mas
+tambem falhou: o transcritor agrupou ou omitiu uma vocalizacao alongada que o
+usuario marcou na waveform como `Tu... tuuu...`, imediatamente antes do novo
+ataque `Tu faz o teu cliente...`. A V4 removeu o bloco inteiro marcado entre
+aproximadamente 9,00 e 9,97 s da V3, preservando pre-roll do ataque seguinte e
+usando overlap curto; ela ainda depende de revisao auditiva humana. O caso e
+evidencia de que cadencia nao e apenas reduzir pausas e que ASR nao valida
+sozinho repeticoes foneticas: anotacao e audicao humanas prevalecem quando a
+transcricao colapsa uma vocalizacao, e a verificacao deve cobrir exatamente a
+janela citada, nao apenas o texto reconhecido.
+
+No L21-C11, em 28/09/2026, o usuario corrigiu quatro problemas de cadencia no
+mesmo corte. Pediu que o video comecasse na segunda ocorrencia de `Se eu faco
+isso por meio de processo comercial`, eliminando o falso arranque repetido; que
+a espera logo depois de `processo comercial` fosse fechada com sobreposicao de
+cauda e ataque; que o aparte `So que, se liga no racional` fosse removido para
+entrar diretamente em `Tu concorda comigo que`; e que a checagem de audiencia
+`Fazendo sentido para voces? Voces estao entendendo?` saisse. No fechamento,
+apontou ainda que `total` havia sido cortado antes da conclusao fonetica. A nova
+versao preservou margem depois da palavra sem invadir o `Porque` do assunto
+seguinte. O antes/depois reproduzivel esta no manifesto
+`L21-C11.v2.timeline-diff.json` junto dos arquivos de producao do corte.
+
+Somado aos casos L21-C08 e L21-C09, o L21-C11 confirma para a marca o padrao de
+tratar o primeiro bloco com rigor maior de retencao: entrar diretamente na
+formulacao valida, retirar repeticao e aparte evitavel e fechar espera artificial
+com overlap fonetico adaptativo. Isso nao autoriza apagar toda pausa nem toda
+pergunta ao publico. As remocoes de `se liga no racional` e da checagem de
+audiencia sao evidencia deste corte; preserve-as em outros videos quando
+cumprirem funcao real de contexto, enfase ou interacao. O mesmo rigor do ataque
+vale na saida: compactacao nunca justifica entregar a ultima palavra mordida.
+
+Na revisao imediatamente seguinte do L21-C11, o usuario identificou que a V2
+ainda cortava a primeira ocorrencia mantida de `comercial`: a emenda havia sido
+posicionada apenas 77 ms depois do fim indicado pelo ASR e o crossfade de 60 ms
+comecava dentro dessa margem. Portanto, timestamp de palavra reconhecida nao e
+fronteira fonetica segura. A V3 alongou a saida, mas continuou errada porque
+tentou resolver a juncao com `acrossfade`: isso escolhia entre deixar um gap ou
+atenuar/morder a cauda anterior, sem construir a escadinha descrita pelo editor.
+
+O usuario confirmou entao como regra explicita que esta emenda exige duas
+camadas simultaneas. Preserve o take inferior ate depois de `comercial`, incluindo
+o vazio e a cauda naturais; posicione `eu tenho que fazer varias reunioes` em uma
+camada superior com `inicio_proximo = fim_anterior - overlap`; e misture os dois
+audios sem crossfade que abaixe automaticamente a fala anterior. O corte visual
+pode ser seco no inicio do take superior, enquanto a cauda do audio inferior
+continua por baixo. Encurtar a pausa e concatenar clipes nao produz esse efeito.
+A V4 implementou essa estrutura com `amix normalize=0` e overlap bruto de 480 ms
+nessa juncao especifica. Os 480 ms sao calibracao do caso, nao regra universal;
+a regra promovida e preservar a palavra inteira e ajustar a sobreposicao pela
+cauda e pelo ataque reais. O antes/depois reproduzivel esta em
+`L21-C11.v4.timeline-diff.json`, e a naturalidade final permanece dependente da
+escuta humana.
+
+Na revisao seguinte do mesmo L21-C11, o usuario ampliou explicitamente essa
+regra para o corte inteiro: toda pausa minimamente consideravel e comparavel a
+primeira deve receber a mesma escadinha de cauda e ataque, porque esse tratamento
+torna o video dinamico, rapido e fluido. A V5 varreu pausas internas e residuos
+nas juncoes, dividiu os takes somente em vazios entre palavras e criou 21
+sobreposicoes reais em camadas. A calibracao usou a duracao de cada vazio, sem
+copiar os 480 ms da primeira emenda, e deixou o ataque seguinte entrar cerca de
+60 ms antes do fim fonetico anterior. Uma segunda auditoria encontrou vales de
+energia dentro de palavras longas; eles nao foram convertidos em cortes, pois
+baixa energia dentro de um fonema nao equivale a pausa editavel. O limiar de
+300 ms e a antecipacao de 60 ms sao parametros deste caso, nao constantes da
+marca. A regra de marca e varrer o corte completo e aplicar overlap adaptativo
+em toda pausa perceptivel que nao tenha funcao expressiva, preservando sempre
+as palavras inteiras. O mapa reproduzivel esta em
+`L21-C11.v5.timeline-diff.json`.
+
+Depois de assistir a V5, o usuario aprovou o resultado como perfeito com
+`Agora sim` e atribuiu diretamente a melhora a enxurrada de feedback acumulada.
+Essa aprovacao confirma o conjunto, nao apenas a primeira emenda: varredura do
+corte inteiro, overlap verdadeiro em camadas, calibracao por cauda e ataque,
+preservacao fonetica e auditoria que distingue pausa entre falas de baixa energia
+dentro de palavras. Em novos cortes Rugido/Lucas, consulte os casos anteriores e
+cruze essas evidencias antes da primeira montagem; o objetivo operacional e
+antecipar os ajustes recorrentes e aumentar a chance de aprovacao na primeira
+revisao, sem transformar os parametros numericos deste caso em constantes.
+
+Em 28/09/2026, o usuario declarou que esse pacote aprovado deveria ser aplicado
+proativamente aos quatro cortes restantes do lote, sem esperar que os mesmos
+erros fossem apontados video por video. A montagem de `L21-C12` a `L21-C15`
+removeu falsos arranques, repeticoes, apartes e checagens de audiencia sem funcao,
+preservou teses completas e refez as emendas em camadas com overlap adaptativo.
+Na auditoria, cinco pausas reais estavam escondidas dentro de tokens longos do
+ASR (`pra`, `que`, `um` e `Tu`). Nesses casos, a waveform e o onset/offset
+acustico prevaleceram sobre o timestamp textual: a palavra foi mantida no lado
+em que era efetivamente pronunciada e apenas o silencio interno foi retirado.
+Depois dessa correcao, os quatro arquivos passaram na varredura de cadencia a
+`-35 dB`, sem spans de revisao de 600 ms nem bloqueios de 900 ms, e nenhuma
+fronteira ficou dentro de palavra depois dos ajustes acusticos. Os mapas estao
+em `L21-C12.v2.timeline-diff.json` a `L21-C15.v2.timeline-diff.json`. Esses
+resultados tecnicos nao substituem a escuta humana: a naturalidade das quatro
+versoes ainda precisa de aprovacao perceptiva do usuario.
+
+O primeiro refino do `L21-C12` confirmou esse limite de forma negativa. A
+auditoria a `-35 dB` declarou o arquivo sem pausas, mas o usuario o rejeitou como
+`cheio de pausas`, sobretudo no inicio. Uma segunda leitura a `-30 dB`, com
+janela minima de 150 ms, encontrou quinze vales no corte e seis nos primeiros
+16 segundos; o maior tinha cerca de 605 ms. O ruído ambiente e a respiracao
+mantinham energia suficiente para mascarar as pausas no limiar antigo, enquanto
+o ASR absorvia varias delas dentro de tokens longos. Portanto, `pass` em
+silencedetect nao prova fluidez. Cruze pelo menos waveform, distancia entre
+ataques, contexto fonetico e revisao humana; quando o usuario disser que ha
+pausa, trate o diagnostico tecnico anterior como falso negativo. O segundo
+refino do C12 reposicionou os ataques em 30 camadas, reduziu o arquivo de 58,3 s
+para 54,4 s e zerou vales de 150 ms ou mais a `-30 dB`, sem fronteiras dentro de
+palavra apos a correcao acustica. Esse segundo resultado ainda depende da escuta
+e aprovacao do usuario.
+
+Na revisao imediatamente seguinte, o usuario rejeitou novamente o C12 porque a
+montagem ainda nao havia aplicado a limpeza editorial ja ensinada: muletas,
+fillers, falsos arranques e redundancias precisam ser avaliados antes da
+waveform. A regra existia na fonte historica `cortes-de-live`, mas nao estava
+explicita no checklist operacional de `edicao-video-ia`; confiar apenas nas
+regras de overlap fez a execucao pular uma etapa. O terceiro refino removeu a
+formulacao duplicada de `cumprir/assumir premissas`, a segunda repeticao de
+`levar meses para consumir uma hora`, a repeticao `eu nao preciso de meses para
+isso` e o qualificador `basicamente` sem funcao. So depois refez cadencia e
+legendas. O corte passou de 54,4 s para 44,4 s, manteve as palavras originais na
+ordem, nao deixou fronteiras dentro de palavra e nao apresentou vales de 150 ms
+ou mais a `-30 dB`. A naturalidade e a selecao final continuam pendentes de
+aprovacao humana.
+
+Evite encaixes artificiais como `salvar sua empresa de uma jornada ruim`.
+Reorganize a frase para que destinatario, condicao e consequencia soem naturais
+e preservem a tese real. Use `Aveny T WEB`, branco, centralizado e proximo
 ao video. Em canvas de 1080 px de largura, a caixa do titulo pode ocupar no
 maximo 900 px. Use fonte entre 72 px e 88 px; nunca comprima ou amplie o bitmap
 depois de renderizar para escapar dessa faixa.

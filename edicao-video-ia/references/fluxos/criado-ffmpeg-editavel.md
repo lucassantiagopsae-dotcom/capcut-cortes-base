@@ -13,6 +13,11 @@ prometa uma timeline editavel que nao foi criada. Se o usuario pedir editavel
 posteriormente, converta o mapa em camadas no editor escolhido, sem usar o MP4
 final como unica fonte.
 
+No fluxo local Lucas/Rugido, o usuario declarou em 25/09/2026 que o Criado deve
+ser usado somente quando ele o solicitar. Um metodo aprendido ao observar uma
+edicao humana no Criado pode ser reproduzido por FFmpeg; a origem do aprendizado
+nao autoriza importar automaticamente o proximo video para o editor.
+
 ## Fonte de Verdade no Criado
 
 O projeto parametrico e a fonte de verdade; MP4 e derivado. Importe a midia

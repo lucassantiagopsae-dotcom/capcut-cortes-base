@@ -19,6 +19,25 @@ No preset Rugido/Lucas atual, use canvas de 1080 px, caixa de ate 900 px,
 `Aveny T WEB`, fonte entre 72 px e 88 px e alinhamento central. Esses numeros
 sao do cliente/template; a tecnica continua parametrizavel para outros projetos.
 
+## Escrever antes de quebrar
+
+Em videos sociais orientados a retencao, o titulo visual deve funcionar como
+gancho, nao como nome de capitulo. Um titulo como `O melhor vendedor nao salva
+uma jornada ruim` identifica o assunto, mas pode nao deixar claro para quem o
+conteudo importa. Quando a tese permitir, torne explicitos o destinatario e a
+consequencia usando construcoes como `voce`, `seu`, `sua empresa` ou outro
+marcador real do publico.
+
+Nao acrescente segunda pessoa mecanicamente. A frase precisa continuar fiel ao
+video e combinar, de forma natural, destinatario, tensao e consequencia. Evite
+regencias travadas criadas apenas para inserir o publico. Prefira reorganizar a
+condicao, por exemplo: `Nem o melhor vendedor salva sua empresa se a jornada
+comercial for ruim`.
+
+Antes da composicao visual, rejeite copies que apenas nomeiam o tema, soam como
+cabecalho didatico ou poderiam servir igualmente para qualquer publico. Depois
+de aprovar o gancho, aplique a medicao e a quebra de linhas abaixo.
+
 ## Escolher a quebra
 
 Meça com a fonte renderizada. Contagem de caracteres e apenas um indicio porque

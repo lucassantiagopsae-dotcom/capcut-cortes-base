@@ -120,8 +120,12 @@ Ferramentas/editor precisam estar disponiveis para executar, nao apenas document
 3. Registre unidades de sentido, corpo e fechamento de cada corte, sem inventar
    resultados nem alterar a ordem fornecida sem autorizacao. Antes de um lote,
    compare tese e intervalos-fonte para evitar varias pecas quase identicas.
-4. Estabilize a fala quando o escopo incluir cortes. Preserve ataque, cauda,
-   respiracao expressiva e contexto. Atualize o mapa temporal apos o refino.
+4. Quando o escopo incluir cortes de fala, faca duas passadas nesta ordem:
+   primeiro a limpeza editorial da transcricao (falsos arranques, repeticoes,
+   redundancias, muletas/fillers, setups reformulados, qualificadores excessivos
+   e autoanuncios); depois a cadencia acustica por waveform, ataque e cauda.
+   Preserve respiracao expressiva e contexto. Atualize o mapa temporal apos cada
+   passada e nao trate ausencia de silencio absoluto como prova de fluidez.
 5. Quando houver musica no escopo, planeje-a sobre essa timeline: intencao, fonte, entradas, saidas,
    transicoes e automacao de volume. Nao escolha so pelo genero musical.
 6. Planeje visuais por ideia: o que ajudam a entender, quando entram, por quanto

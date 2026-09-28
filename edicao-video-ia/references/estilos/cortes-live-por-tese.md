@@ -15,9 +15,11 @@ Selecione falas reais que sustentam essa cadeia sem escrever novas afirmacoes
 na boca da pessoa. Avance na cronologia; nao antecipe uma conclusao posterior
 para fabricar outra narrativa sem autorizacao.
 
-Remova espera de chat, falso arranque, repeticao e exemplo lateral quando nao
-acrescentam sentido. Prefira a resposta declarativa a pergunta/espera repetida,
-mas preserve uma pergunta curta ou frase-ponte que explique o proximo dado.
+Remova espera de chat, falso arranque, repeticao, redundancia semantica, muleta
+sem funcao (`tipo assim`, `entendeu`, `ne`, `sabe` e equivalentes) e exemplo
+lateral quando nao acrescentam sentido. Prefira a resposta declarativa a
+pergunta/espera repetida, mas preserve uma pergunta curta, muleta retorica ou
+frase-ponte que explique o proximo dado.
 Uma explicacao visual longa pode ser compactada se a fala restante sustentar
 a mesma afirmacao; nao afirme o que dependia de um grafico agora ausente.
 

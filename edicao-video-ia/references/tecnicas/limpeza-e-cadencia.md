@@ -18,6 +18,32 @@ Quantidade de microcortes, duracao mediana e ausencia de gaps nao provam ritmo.
 Atencao especial ao inicio, onde falso arranque e palavra curta mordida ficam
 evidentes, e ao final, onde uma cauda pode introduzir o comeco de outro assunto.
 
+## Passada Editorial Antes da Waveform
+
+Antes de ajustar silencios, overlaps ou fades, leia a fala inteira do corte e
+registre uma decisao de manter/remover para sete classes de excesso:
+
+1. falsos arranques;
+2. perguntas literais repetidas;
+3. redundancias semanticas em formulacoes proximas;
+4. muletas e fillers sem funcao retorica, como `ne, cara`, `ta ligado`, `po`,
+   `tipo assim`, `sabe`, `entendeu` e `como eu ja te falei`;
+5. setups que o proprio falante reformula logo depois;
+6. qualificadores repetidos alem da enfase necessaria;
+7. autoanuncios curtos que interrompem uma explicacao ja clara.
+
+Remova, nao reescreva: todas as palavras restantes devem existir na fonte e
+manter sua ordem. Uma muleta pode marcar ritmo, intimidade ou enfase; nesse caso,
+registre a funcao e preserve-a. Em duvida real, mantenha. Mas nao deixe uma
+muleta por acidente apenas porque a waveform e continua, nem tente resolver
+redundancia semantica apenas acelerando a fala.
+
+Somente depois dessa passada editorial faca a passada de cadencia. Releia a
+transcricao final e procure novamente os sete tipos antes de renderizar o lote.
+Se o usuario apontar uma muleta ou repeticao que sobreviveu, trate o checklist
+anterior como incompleto, procure o mesmo erro no corte inteiro e nos demais
+videos do lote e regenere legenda e mapa temporal.
+
 Uma resposta declarativa pode substituir pergunta/espera de chat se preservar
 o sentido. Guarde a menor frase-ponte que explica a entrada de grafico, dado ou
 conclusao. Se a ponte trouxer a ultima palavra da fala anterior repetida, retire
@@ -95,6 +121,12 @@ exigem revisao e spans a partir de `0.90 s` bloqueiam a entrega ate escuta ou
 correcao. Esses limiares sao um gate de triagem para fala pausada em video curto,
 nao autorizacao para apagar automaticamente respiracao, enfase ou pausa expressiva.
 Se uma pausa bloqueada for mantida, registre o motivo editorial no QA.
+
+Ruido ambiente e respiracao podem manter energia acima do limiar e esconder uma
+pausa perceptivel. Por isso, `pass` em `silencedetect` nunca encerra o QA: confira
+distancia entre ataques, tokens anormalmente longos do ASR e feedback humano.
+Quando a escuta humana contradiz o detector, o detector produziu um falso
+negativo; revise o metodo e o corte, nao o julgamento do usuario.
 
 ## Cobertura
 

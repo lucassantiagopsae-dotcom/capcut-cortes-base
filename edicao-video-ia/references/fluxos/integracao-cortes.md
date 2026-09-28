@@ -54,6 +54,7 @@ global sem teste e aprovacao no novo contexto.
 | Rugido: H001 titulo/export e regras de titulo/legenda do SKILL | Metodo Lucas, caso CapCut e [Legendas do audio final](legendas-audio-final.md) |
 | cortes-rugido e Aula Segunda aprovada: tese, ritmo 1.15x contextual, layout e copy | [Metodo Lucas](../casos/rugido-lucas-felix.md) |
 | mapeamento-ganchos-brutos e cortes-de-live: atlas, cobertura, buildability, curadoria | [Atlas e curadoria](gancho-atlas-e-curadoria.md) |
+| cortes-de-live/principios/edicao-de-fala: falsos arranques, perguntas repetidas, redundancias, muletas, setups reformulados, qualificadores e autoanuncios | [Limpeza e cadencia](../tecnicas/limpeza-e-cadencia.md) e [Cortes de live por tese](../estilos/cortes-live-por-tese.md) |
 | capcut-legendas-rugido: retiming, ordem editorial, bloco de sentido, TASA Orbiter Bold | [Legendas do audio final](legendas-audio-final.md) e metodo Lucas |
 | capcut-legendas-autoral: ataque/cauda acusticos e segmentacao semantica/prosodica | [Legendas do audio final](legendas-audio-final.md), sem transferir estilo visual de outra marca |
 | descricao-video-tese: titulo/copy de publicacao versus legenda na tela | Metodo Lucas; regra de publicacao permanece no projeto |
