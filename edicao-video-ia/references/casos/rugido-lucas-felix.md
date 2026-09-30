@@ -29,9 +29,12 @@ de microcortes nem duracao padrao de overlap.
 Antes de liberar lote para Instagram, audite todos os MP4s finais com
 `scripts/auditar_cadencia_reels.py`. Para a fala pausada do Lucas, baixa energia
 interna a partir de `0.60 s` entra em revisao e a partir de `0.90 s` bloqueia a
-entrega ate escuta ou correcao. A aceleracao em `1.15x` nao substitui a limpeza:
-espera de chat, tempo olhando participantes e silencio entre raciocinios ainda
-precisam de uma passada propria. Mantenha somente pausas que carreguem enfase.
+entrega ate escuta ou correcao. No template atual Lucas/Fase 1, a velocidade-base
+e `1.18x`, salvo quando o usuario pedir outro valor para um video ou lote. O
+`1.15x` foi uma calibracao especifica anterior e nao deve ser propagado como
+padrao. A aceleracao nao substitui a limpeza: espera de chat, tempo olhando
+participantes e silencio entre raciocinios ainda precisam de uma passada propria.
+Mantenha somente pausas que carreguem enfase.
 
 Antes de fazer lote, compare tese e trechos-fonte entre os candidatos. O usuario
 prefere variedade real; se varios compartilham corpo ou payoff, sinalize
@@ -379,10 +382,13 @@ Na Aula Segunda de setembro de 2026, o usuario aprovou o resultado final e
 avaliou os videos `SEG-C01` a `SEG-C05` como excelentes. O equilibrio aprovado
 combinou gancho mapeado, tese completa, pausas limpas, overlaps pontuais,
 titulo/copy refinados e legenda. Para aquela fala pausada, `1.15x` funcionou;
-nao acelere todo video Lucas a 1.15x por automatismo. Houve correcao de titulo
-alto/fraco e fonte antes da aprovacao. `SEG-C03` foi aprovado como video final,
-mas pode funcionar como alternativa editorial no planejamento do feed;
-`SEG-C07` e `SEG-C08` reaproveitam material e nao contam como ideias novas.
+essa calibracao continua sendo evidencia daquele lote, mas o usuario esclareceu
+em 30/09/2026 que ela foi uma excecao replicada indevidamente. Para os videos
+atuais da Fase 1, use `1.18x` como base e aceite override explicito por video ou
+lote. Houve correcao de titulo alto/fraco e fonte antes da aprovacao. `SEG-C03`
+foi aprovado como video final, mas pode funcionar como alternativa editorial no
+planejamento do feed; `SEG-C07` e `SEG-C08` reaproveitam material e nao contam
+como ideias novas.
 
 No lote, o MP4 final foi validado em 1080x1920, 24 fps, audio estereo 48 kHz
 e decodificacao completa. Esses parametros sao referencia de entrega daquele

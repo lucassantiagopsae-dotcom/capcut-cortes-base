@@ -240,6 +240,11 @@
       "id": 48,
       "prompt": "No L19-C02 a legenda mostra uma palavra so, mas o render fala 'no funil' duas vezes e depois 'algum, algum cara'. Corrija usando a skill, sem esconder o erro apenas no SRT.",
       "expected_output": "O agente deve tratar tokens do ASR que cruzam dois intervalos como fronteiras inseguras, localizar as ocorrencias no audio final por waveform, timeline e transcricao, preservar apenas a formulacao valida 'no funil que esta rodando hoje' e a segunda ocorrencia de 'algum', refazer a passada editorial no corte inteiro, remapear a legenda e validar novamente o MP4. Deduplicar somente o texto, aplicar fade ou aceitar um QA numerico sem conferir a janela audivel nao resolve o caso."
+    },
+    {
+      "id": 49,
+      "prompt": "Nos videos atuais do Lucas/Fase 1, use a velocidade padrao correta. O 1.15x foi uma excecao antiga que acabou sendo replicada; o padrao agora e sempre 1.18x, salvo quando eu pedir outro valor.",
+      "expected_output": "O agente deve configurar 1.18x como velocidade-base do template Lucas/Fase 1, recalcular duracao, timeline, legendas e QA dos videos afetados e manter a possibilidade de override explicito por video ou lote. Nao deve conservar 1.15x por heranca do caso antigo, nem transferir 1.18x automaticamente para outra marca ou formato."
     }
   ]
 }
