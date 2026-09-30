@@ -390,6 +390,12 @@ foi aprovado como video final, mas pode funcionar como alternativa editorial no
 planejamento do feed; `SEG-C07` e `SEG-C08` reaproveitam material e nao contam
 como ideias novas.
 
+Em 30/09/2026, depois de assistir aos cinco renders `L19-C01` a `L19-C05` ja
+recalculados em `1.18x`, o usuario avaliou o lote como otimo e autorizou preparar
+titulo, copy e agendamento. Registre isto como evidencia de aprovacao conjunta
+da montagem e da velocidade nesse lote especifico, sem inferir que cada escolha
+de gancho, duracao ou texto visual virou regra para outros cortes.
+
 No lote, o MP4 final foi validado em 1080x1920, 24 fps, audio estereo 48 kHz
 e decodificacao completa. Esses parametros sao referencia de entrega daquele
 lote, nao autorizacao para mudar um projeto diferente. O historico de drafts
