@@ -225,6 +225,11 @@
       "id": 45,
       "prompt": "Mapeei cinco ganchos do Lucas dentro de uma explicacao unica. Os microcortes ja fecham pontos separados e vao sair amanha. Finaliza o lote seguindo o que aprendemos.",
       "expected_output": "Mantem os microcortes como pecas complementares e identifica se a fonte sustenta um arco maior autonomo. Quando sustenta, gera tambem a versao longa para o mesmo dia a partir das fontes e da cronologia, com abertura, cadencia, titulo, legenda e fechamento proprios. Nao apenas concatena MP4s, nao duplica ganchos/titulos e nao inventa um arco quando os trechos sao independentes."
+    },
+    {
+      "id": 46,
+      "prompt": "O video deveria terminar em 'na jornada', mas ficou um bico incompreensivel da frase seguinte. Corrige o final e aprende isso para qualquer cliente.",
+      "expected_output": "O agente deve inspecionar waveform, timeline, transcricao e o material imediatamente posterior; preservar a cauda completa de 'jornada'; encerrar antes do ataque lexical seguinte, sem confiar em padding fixo nem esconder voz residual com fade; e tratar a tecnica como geral. O layout de titulo, video e legenda do Lucas Fase 1 deve permanecer uma preferencia separada de marca/modelo."
     }
   ]
 }

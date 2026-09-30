@@ -70,6 +70,15 @@ nao e margem fonetica. Uma palavra curta seguida de espera e depois outra frase
 pode exigir dois clipes, em vez de eliminar a palavra curta. Na saida, retire
 apenas a sobra que comeca outro assunto, sem reduzir caudas do projeto inteiro.
 
+No fechamento do video, nao use margem posterior fixa sem inspecionar o sucessor.
+Depois de preservar a cauda fonetica da ultima palavra, pare antes do ataque
+lexical da frase seguinte. Um fragmento de 50-100 ms pode nao formar uma palavra
+inteligivel, mas ainda soar como voz comecando e deixar o final claramente
+inacabado. Cruze waveform, timeline e transcricao tambem fora do limite escolhido:
+o material descartado revela se a margem invadiu o proximo fonema. Fade nao
+transforma esse bico em encerramento; reposicione a borda entre a cauda util e o
+novo ataque.
+
 Se houver estalo ou fala adiantada, investigue source duplicado, corte desnecessario
 e overlap cedo demais antes de adicionar fade. Um clipe entre duas emendas pode
 precisar de fade de entrada e saida distintos; a maioria nao precisa de efeito.
@@ -109,6 +118,15 @@ parametros iniciais; ruido, fricativas e respiracao exigem interpretacao. Os
 spans de saida usam tempos absolutos da fonte, incluindo o offset de `--start`.
 Nao envie audio a outro servico por causa da existencia de uma chave: respeite
 a escolha e a autorizacao ja dadas no trabalho atual.
+
+Nao conclua uma emenda por uma evidencia isolada. Cruze obrigatoriamente tres
+leituras da mesma janela: `waveform` para localizar ataques, caudas, vales e
+vocalizacoes; `timestamp/timeline` para saber exatamente qual fragmento e camada
+produzem o evento; e `transcricao/ASR` para recuperar palavras e funcao
+editorial. Quando elas divergirem, inspecione o material descartado e preserve
+a observacao humana como evidencia perceptiva. Um token longo pode fundir
+risada, hesitacao e palavra, enquanto um corte de silencio pode duplicar o mesmo
+token em dois clipes; nenhuma dessas leituras, sozinha, identifica o corte certo.
 
 Para entregas curtas de Instagram/Reels, rode tambem a auditoria no MP4 final:
 

@@ -41,8 +41,13 @@ reproduziveis.
 
 ## Aparencia e linguagem
 
-No formato vertical das lives recentes, use canvas 1080x1920, live horizontal
-inteira no centro sem esticar, titulo acima e legenda abaixo. O lote Aula
+O usuario nomeia o formato atual como **videos da Fase 1**: uma fase de teste no
+Instagram do Lucas. Nesse modelo especifico, use canvas 1080x1920, live horizontal
+inteira no centro sem esticar, titulo acima e legenda abaixo. Essa composicao e
+um template do Lucas/Fase 1, nao parte da inteligencia geral de cortes e nao deve
+ser transferida automaticamente para outro cliente, feed ou fase. Tecnicas como
+limpeza editorial, preservacao fonetica, leitura de waveform e controle de bico e
+cauda continuam gerais e reutilizaveis independentemente desse layout. O lote Aula
 Segunda aprovado usou live em x=0, y=656, 1080x608 sobre preto. Confirme o
 template e o enquadramento do projeto; essas coordenadas nao se impoem a toda
 campanha.
@@ -219,6 +224,83 @@ legendas. O corte passou de 54,4 s para 44,4 s, manteve as palavras originais na
 ordem, nao deixou fronteiras dentro de palavra e nao apresentou vales de 150 ms
 ou mais a `-30 dB`. A naturalidade e a selecao final continuam pendentes de
 aprovacao humana.
+
+Em 29/09/2026, o usuario rejeitou a abertura do `L21-C22` com
+`O que que eu to fazendo aqui agora, turma?` porque o corte isolado nao mostra
+o que estava sendo feito. A fonte confirma que a pergunta e um debrief do
+exemplo anterior: no `L21-C21`, Lucas conduz o publico a concluir que pode
+ensinar o cliente por saber mais sobre o problema; depois de um participante
+dizer que a fala destravou um medo, Lucas nomeia o mecanismo como
+`construindo viabilidade`. Portanto, o inicio do C22 depende do contexto do
+C21. Registre este caso como evidencia que reforca o gancho autonomo para
+publico frio: pergunta metalinguistica ou referencia como `isso`, `aqui` e
+`o que eu estou fazendo` so pode abrir o corte quando o referente estiver
+claro no proprio video. Se a pergunta for mantida como gancho, o corpo precisa
+recuperar a premissa anterior; outra opcao e abrir por uma proposicao
+autossuficiente da propria fonte. Nao presuma que o espectador viu o corte
+anterior.
+
+Na revisao seguinte do mesmo `L21-C22`, o usuario corrigiu o fechamento da
+montagem: depois de `cara, nao e pra mim. Eu nao consigo.`, a fala `Outra
+objecao.` nao deveria permanecer. A V3 preservou a cauda completa de `consigo`
+e terminou antes da ponte seguinte. Isto e evidencia do caso, nao regra para
+apagar toda frase metalinguistica no fim: quando o payoff ja fecha a tese, confira
+se uma rotulacao como `outra objecao` apenas anuncia o proximo raciocinio e, se
+for assim, deixe-a para o bloco seguinte. As duas ocorrencias encontradas nos
+arquivos de entrega eram versoes do proprio C22, nao dois cortes distintos.
+
+Em 29/09/2026, no `L21-C24`, o usuario pediu para reduzir o longo bloco de
+interacao sobre quantas reunioes o publico fazia. Ele explicitou que a interacao
+nao e proibida; o problema era repetir varias vezes a mesma pergunta. A V2
+preservou uma ocorrencia de `Quantos de voces... duas reunioes por semana?`, o
+limite curto `pelo menos duas / de duas pra cima` e um unico convite de resposta,
+mas removeu a segunda formulacao da pergunta, a reafirmacao `se voce ja faz mais
+de duas reunioes por semana` e as esperas correspondentes. Isto entra como
+evidencia de limpeza editorial da marca: compacte repeticao de interacao sem
+apagar automaticamente toda conversa com o publico.
+
+Ao revisar essa V2, o usuario manteve a selecao editorial e tambem preservou o
+trecho `aumentar tua taxa de conversao pra ontem`, mas apontou que as emendas do
+bloco de interacao ainda soavam espacadas. O mapa mostrou cinco juncoes entre
+`vendas? -> pelo menos duas -> de duas pra cima -> manda eu ai -> entao` usando
+apenas 60 ms de overlap apesar de residuos de aproximadamente 200-300 ms entre
+cauda e ataque. A V3 aplicou overlap adaptativo somente nessas juncoes, entre
+aproximadamente 267 e 345 ms brutos, sem remover mais palavras nem alterar o
+restante do corte. Isto reforca a separacao entre as duas passadas: acertar o
+conteudo nao encerra o trabalho; a interacao mantida ainda precisa da mesma
+escadinha sutil de cauda e bico usada nas falas declarativas. Os valores sao
+calibracao deste caso e continuam dependentes de escuta humana.
+
+Depois de assistir aos cinco arquivos finais `L21-C21` a `L21-C25`, em
+29/09/2026, o usuario aprovou o lote inteiro como `perfeito`. A aprovacao inclui
+explicitamente o `L21-C22` V3, com gancho autonomo e fechamento antes de
+`Outra objecao`, e o `L21-C24` V3, com a interacao compactada e overlaps de
+cauda e bico recalibrados. Registre isto como evidencia de resultado do conjunto:
+as correcoes acumuladas resolveram os problemas percebidos sem exigir novo
+refino nos cinco videos. A confirmacao de agendamento feita na mesma mensagem e
+apenas autorizacao operacional e nao faz parte desta evidencia editorial.
+
+Em 30/09/2026, no primeiro corte da live de 19/09 (`L19-C01`), o usuario
+identificou pela entonacao que o fechamento em `Onde eu estou perdendo
+resultado?` parecia interromper uma enumeracao ainda aberta, embora a transcricao
+isolada pudesse parecer semanticamente completa. A fonte seguinte traz
+`o quao distante eu estou dos benchmarks`, formando o terceiro item da lista
+iniciada por `Onde eu estou perdendo performance?`. Foi gerada uma previa que
+inclui somente esse sucessor e termina antes da explicacao seguinte sobre
+benchmarks. O caso entra como evidencia, ainda pendente de escolha humana:
+antes de travar o final de um corte, confira nao apenas palavras e waveform,
+mas tambem se a prosodia projeta continuacao; quando houver duvida, inspecione e
+apresente o sucessor real em vez de presumir que a ultima frase ja fechou a tese.
+
+Na revisao seguinte, no `L19-C02`, o usuario apontou entre aproximadamente
+`00:58` e `01:01` uma risada/hesitacao antes de `No fim das contas`. O ASR havia
+fundido a vocalizacao e a entrada da frase num unico token longo (`No`), enquanto
+a montagem dividiu esse token em dois intervalos e a legenda resultante mostrou
+`No No fim das contas`. O diagnostico so ficou claro ao cruzar waveform, posicao
+dos intervalos na timeline e transcricao. A correcao remove o primeiro fragmento
+e preserva pre-roll antes do ataque verdadeiro. O caso reforca como regra de
+processo da marca que waveform, timestamp/timeline e transcricao devem ser
+analisados em conjunto; nenhuma fonte isolada valida palavra, risada ou fronteira.
 
 Evite encaixes artificiais como `salvar sua empresa de uma jornada ruim`.
 Reorganize a frase para que destinatario, condicao e consequencia soem naturais
