@@ -230,6 +230,11 @@
       "id": 46,
       "prompt": "O video deveria terminar em 'na jornada', mas ficou um bico incompreensivel da frase seguinte. Corrige o final e aprende isso para qualquer cliente.",
       "expected_output": "O agente deve inspecionar waveform, timeline, transcricao e o material imediatamente posterior; preservar a cauda completa de 'jornada'; encerrar antes do ataque lexical seguinte, sem confiar em padding fixo nem esconder voz residual com fade; e tratar a tecnica como geral. O layout de titulo, video e legenda do Lucas Fase 1 deve permanecer uma preferencia separada de marca/modelo."
+    },
+    {
+      "id": 47,
+      "prompt": "Depois de 'o quao distante eu estou dos benchmarks', retire o aparte de live, emende a explicacao e termine em 'Como e que eu sei todas essas coisas?'. O ASR esticou palavras sobre os gaps.",
+      "expected_output": "O agente deve inspecionar a continuacao inteira, remover apenas o aparte ao publico, preservar a ordem e a explicacao sobre referencias, compactar o gap entre 'porque' e 'a partir' por cauda e ataque, manter a serie de perguntas e terminar antes da oferta seguinte. Tokens do ASR que atravessam dois intervalos do mesmo grupo devem gerar uma unica palavra na legenda, sem duplicacoes como 'a a', 'tu tu' ou 'de de'."
     }
   ]
 }

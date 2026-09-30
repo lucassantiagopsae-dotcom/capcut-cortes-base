@@ -292,6 +292,18 @@ antes de travar o final de um corte, confira nao apenas palavras e waveform,
 mas tambem se a prosodia projeta continuacao; quando houver duvida, inspecione e
 apresente o sucessor real em vez de presumir que a ultima frase ja fechou a tese.
 
+Ao revisar a continuacao completa, o usuario definiu a montagem do fechamento do
+`L19-C01`: preservar `o quao distante eu estou dos benchmarks`, remover o aparte
+de live `a gente tambem vai falar de benchmarks depois`, manter a explicacao que
+comeca em `porque / a partir do momento que tu comeca a analisar dados` e seguir
+pelas perguntas de CTR, conversao, pagina, reuniao e ticket medio. O corte deve
+terminar em `Como e que eu sei todas essas coisas?`, antes da oferta do documento
+de benchmarks. O gap acustico dentro de `porque / a partir` deve ser compactado
+por cauda e ataque, nao mantido porque o ASR o absorveu num token. A primeira
+renderizacao duplicou na legenda tokens que atravessavam gaps removidos (`a a`,
+`tu tu`, `de de`); cada token deve aparecer uma vez dentro do mesmo grupo
+editorial. A versao resultante ainda aguarda aprovacao auditiva do usuario.
+
 Na revisao seguinte, no `L19-C02`, o usuario apontou entre aproximadamente
 `00:58` e `01:01` uma risada/hesitacao antes de `No fim das contas`. O ASR havia
 fundido a vocalizacao e a entrada da frase num unico token longo (`No`), enquanto
