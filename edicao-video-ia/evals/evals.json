@@ -245,6 +245,11 @@
       "id": 49,
       "prompt": "Nos videos atuais do Lucas/Fase 1, use a velocidade padrao correta. O 1.15x foi uma excecao antiga que acabou sendo replicada; o padrao agora e sempre 1.18x, salvo quando eu pedir outro valor.",
       "expected_output": "O agente deve configurar 1.18x como velocidade-base do template Lucas/Fase 1, recalcular duracao, timeline, legendas e QA dos videos afetados e manter a possibilidade de override explicito por video ou lote. Nao deve conservar 1.15x por heranca do caso antigo, nem transferir 1.18x automaticamente para outra marca ou formato."
+    },
+    {
+      "id": 50,
+      "prompt": "Neste anuncio vertical da RocketHub, a gestora gostou do estilo, mas a legenda some nos fundos claros. Ela rejeitou a nuvem azul e nao quer ver a proxima frase antes do corte. Deixe legivel e anime somente o gancho inicial.",
+      "expected_output": "Preserva cortes e audio, usa somente o cue atual segmentado por sentido e protege a area do CTA. Testa texto branco forte sobre caixa local semitransparente ajustada a frase, em variante mais fechada do azul da marca, sobre takes claros e escuros. No gancho, usa tipografia cinetica cue a cue ate o fechamento semantico, com sombra mais densa e difusa. Nao cria scrim ou tarja de base inteira, nao antecipa o proximo take e nao transfere fonte, cor ou parametros da RocketHub para outra marca sem referencia."
     }
   ]
 }

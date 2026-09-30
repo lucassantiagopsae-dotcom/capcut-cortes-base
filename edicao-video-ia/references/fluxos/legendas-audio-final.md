@@ -60,6 +60,23 @@ para os elementos nativos do aplicativo. Suba a legenda o suficiente para ela
 continuar legivel na veiculacao real; coordenadas de outro projeto nao sao preset.
 Teste com uma sobreposicao que simule a interface e confira os blocos mais largos.
 
+Quando fundos variados fizerem sombra ou contorno insuficientes, teste uma caixa
+local atras de cada cue, dimensionada pela largura real do texto, com respiro e
+raio discretos. Prefira texto claro em peso forte e uma cor da marca escurecida
+e semitransparente; valide a opacidade depois da composicao e compressao, pois
+um valor numerico isolado nao garante contraste. Essa caixa localizada nao e uma
+nuvem, scrim ou tarja sobre uma regiao inteira do quadro. Se a previa do proximo
+cue antecipar a fala ou revelar texto de outro take, mostre somente a unidade
+atual. Manter o cue anterior durante uma pausa curta e prever o proximo sao
+decisoes diferentes; a persistencia depende da continuidade pedida no projeto.
+
+Uma abertura pode substituir temporariamente a legenda comum por tipografia
+cinetica. Divida o gancho em unidades semanticas sincronizadas a fala, anime uma
+unidade por vez e termine no fechamento real do gancho antes de voltar ao padrao
+normal. Variar familia, peso ou cor pode criar hierarquia; sombra mais opaca e
+difusa ajuda em fundos complexos. Nao exiba a frase futura, nao prolongue a
+abertura so para ocupar segundos e nao transporte fontes ou paleta sem referencia.
+
 Quando a direcao pedir legenda limpa, prefira peso bold ou semibold, entrelinha
 compacta e contraste de preenchimento, sem contorno pesado. Fonte grande nao
 compensa quebra ruim: limite linhas pelo sentido, aproxime-as como um bloco e
