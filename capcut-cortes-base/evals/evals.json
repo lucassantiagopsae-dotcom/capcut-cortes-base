@@ -35,6 +35,11 @@
       "id": 7,
       "prompt": "O detector marcou um intervalo abaixo de -40 dB como silencio, mas ele parece conter o final soprado da palavra. A nova transcricao tambem omitiu um eu e mudou SD para desse D. Da para considerar o audio aprovado?",
       "expected_output": "O agente deve tratar o limiar e as diferencas de transcricao como pistas, verificar o som e os intervalos preservados na fonte, e recuperar a borda se houver cauda removida. Nao deve remover a regiao apenas por baixa energia, reescrever a fala para combinar com a transcricao, nem garantir naturalidade por similaridade textual ou ausencia de saturacao. Deve informar os limites de verificacao e priorizar escuta quando disponivel."
+    },
+    {
+      "id": 8,
+      "prompt": "O corte deveria terminar em 'na jornada', mas depois ficou um bico incompreensivel da frase seguinte. Corrige sem morder a ultima palavra.",
+      "expected_output": "O agente deve cruzar waveform, timeline, transcricao e o material posterior; preservar a cauda completa de 'jornada'; encerrar antes do ataque lexical seguinte; e rejeitar padding fixo ou fade como solucao para voz residual. A regra e tecnica e nao deve impor layout, marca ou formato."
     }
   ]
 }

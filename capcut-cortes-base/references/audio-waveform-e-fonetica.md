@@ -41,6 +41,17 @@ Como ponto inicial:
 
 A margem deve proteger o som, nao trazer sujeira.
 
+## Fechamento sem bico da frase seguinte
+
+No fim de um video ou take, nao aplique uma margem posterior fixa sem conferir
+o material seguinte. Preserve a cauda inteira da ultima palavra e encerre antes
+do ataque lexical da proxima frase. Mesmo 50-100 ms de voz incompreensivel podem
+soar como uma nova palavra comecando e denunciar um corte interrompido.
+
+Cruze waveform, timestamp/timeline e transcricao tambem alguns frames depois da
+borda pretendida. Se a margem invadiu o proximo ataque, reposicione a saida no
+espaco entre a cauda util e esse ataque. Nao use fade para esconder voz residual.
+
 ## Pausas e gaps
 
 Um gap pode ser:
