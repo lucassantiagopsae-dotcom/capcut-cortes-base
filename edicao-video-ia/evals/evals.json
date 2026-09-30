@@ -235,6 +235,11 @@
       "id": 47,
       "prompt": "Depois de 'o quao distante eu estou dos benchmarks', retire o aparte de live, emende a explicacao e termine em 'Como e que eu sei todas essas coisas?'. O ASR esticou palavras sobre os gaps.",
       "expected_output": "O agente deve inspecionar a continuacao inteira, remover apenas o aparte ao publico, preservar a ordem e a explicacao sobre referencias, compactar o gap entre 'porque' e 'a partir' por cauda e ataque, manter a serie de perguntas e terminar antes da oferta seguinte. Tokens do ASR que atravessam dois intervalos do mesmo grupo devem gerar uma unica palavra na legenda, sem duplicacoes como 'a a', 'tu tu' ou 'de de'."
+    },
+    {
+      "id": 48,
+      "prompt": "No L19-C02 a legenda mostra uma palavra so, mas o render fala 'no funil' duas vezes e depois 'algum, algum cara'. Corrija usando a skill, sem esconder o erro apenas no SRT.",
+      "expected_output": "O agente deve tratar tokens do ASR que cruzam dois intervalos como fronteiras inseguras, localizar as ocorrencias no audio final por waveform, timeline e transcricao, preservar apenas a formulacao valida 'no funil que esta rodando hoje' e a segunda ocorrencia de 'algum', refazer a passada editorial no corte inteiro, remapear a legenda e validar novamente o MP4. Deduplicar somente o texto, aplicar fade ou aceitar um QA numerico sem conferir a janela audivel nao resolve o caso."
     }
   ]
 }

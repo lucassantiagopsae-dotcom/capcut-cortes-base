@@ -99,6 +99,14 @@ intencionais em outro estilo. Confira referencias de source sobrepostas para
 evitar duas copias da mesma fala. Atualize duracoes de compostos, segmentos pais
 e projeto, bem como legendas; duracao total quase igual nao prova timing igual.
 
+Antes do render, trate como fronteira insegura qualquer token do ASR que
+intersecte dois intervalos mantidos do mesmo grupo. Deduplicar apenas o texto da
+legenda nao corrige o audio: as duas metades podem remontar um falso arranque ou
+repetir palavras como `no funil` e `algum`. Mova as bordas para ataques e caudas
+reais, escolha a ocorrencia valida ou preserve o token continuo; depois confira
+a janela no audio final, porque o mapa de source correto nao prova que a mistura
+na timeline ficou sem duplicacao.
+
 Quando houver overlaps editaveis, organize faixas em escadinha se isso facilitar
 a revisao, sem transformar a organizacao em corte visual automatico. Preserve
 blocos humanos estaveis e trabalhe o trecho instavel separado quando util.

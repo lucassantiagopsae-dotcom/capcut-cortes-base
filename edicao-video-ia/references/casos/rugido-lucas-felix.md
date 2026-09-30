@@ -316,6 +316,17 @@ e preserva pre-roll antes do ataque verdadeiro. O caso reforca como regra de
 processo da marca que waveform, timestamp/timeline e transcricao devem ser
 analisados em conjunto; nenhuma fonte isolada valida palavra, risada ou fronteira.
 
+Ainda no `L19-C02`, a revisao do arquivo completo revelou que a divisao
+automatica por baixa energia atravessou tokens longos e remontou as duas metades
+como repeticoes audiveis. O inicio passou a dizer `no funil que esta / no funil
+que esta rodando hoje`; mais adiante, `algum` apareceu duas vezes, junto de
+outros falsos arranques e redundancias que a passada editorial deveria ter
+retirado. A versao corrigida escolheu a segunda ocorrencia valida de `algum`,
+preservou somente `no funil que esta rodando hoje`, removeu o falso arranque
+antes de `nunca ta rico` e refez o restante da limpeza editorial antes das
+emendas. O gate final a `-35 dB` passou sem spans de `0.60 s` ou bloqueios de
+`0.90 s`; a naturalidade continua dependente da revisao auditiva do usuario.
+
 Evite encaixes artificiais como `salvar sua empresa de uma jornada ruim`.
 Reorganize a frase para que destinatario, condicao e consequencia soem naturais
 e preservem a tese real. Use `Aveny T WEB`, branco, centralizado e proximo
