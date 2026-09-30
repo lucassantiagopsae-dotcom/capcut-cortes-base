@@ -302,7 +302,9 @@ de benchmarks. O gap acustico dentro de `porque / a partir` deve ser compactado
 por cauda e ataque, nao mantido porque o ASR o absorveu num token. A primeira
 renderizacao duplicou na legenda tokens que atravessavam gaps removidos (`a a`,
 `tu tu`, `de de`); cada token deve aparecer uma vez dentro do mesmo grupo
-editorial. A versao resultante ainda aguarda aprovacao auditiva do usuario.
+editorial. Depois de assistir a versao completa, o usuario aprovou o `L19-C01`
+com `esse dai ja ta bom`, confirmando esse fechamento e a emenda compactada
+como resultado valido para este caso.
 
 Na revisao seguinte, no `L19-C02`, o usuario apontou entre aproximadamente
 `00:58` e `01:01` uma risada/hesitacao antes de `No fim das contas`. O ASR havia
