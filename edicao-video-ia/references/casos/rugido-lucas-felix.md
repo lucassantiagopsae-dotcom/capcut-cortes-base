@@ -430,8 +430,9 @@ problema que pode ficar escondido: volume alto com baixa qualidade, conversao
 alta com volume insuficiente, CPL baixo com leads ruins e muitas vendas com
 baixa margem. Registre a rejeicao como evidencia do caso: o novo titulo deve
 expor essa tensao ou consequencia, em vez de apenas enumerar quatro metricas ou
-repetir a primeira frase. A formulacao substituta ainda depende da escolha do
-usuario.
+repetir a primeira frase. Entre as alternativas seguintes, o usuario escolheu
+`Uma metrica boa pode esconder uma operacao ruim`, rejeitando `O numero parece
+bom, mas esconde o problema` e `Voce pode estar comemorando a metrica errada`.
 
 Na revisao imediatamente seguinte, o usuario rejeitou no `L19-C10` o titulo
 `Reuniao barata demais costuma esconder lead ruim` porque ele basicamente
@@ -440,4 +441,6 @@ titulo anterior ignorava: CAC e custo de reuniao so podem ser avaliados junto
 do ticket, do valor recebido por cliente e do tipo de funil. Registre como
 evidencia do caso que o titulo visual deve completar o gancho falado com essa
 consequencia ou mecanismo, e nao funcionar como uma segunda legenda da mesma
-frase. A formulacao substituta ainda depende da escolha do usuario.
+frase. O usuario escolheu `Seu CAC nao precisa ser baixo. Seu ticket precisa
+pagar a conta`, rejeitando `CAC alto so e problema quando o ticket nao acompanha`
+e `O custo da aquisicao so faz sentido junto do valor por cliente`.
