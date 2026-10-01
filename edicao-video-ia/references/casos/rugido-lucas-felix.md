@@ -432,3 +432,12 @@ baixa margem. Registre a rejeicao como evidencia do caso: o novo titulo deve
 expor essa tensao ou consequencia, em vez de apenas enumerar quatro metricas ou
 repetir a primeira frase. A formulacao substituta ainda depende da escolha do
 usuario.
+
+Na revisao imediatamente seguinte, o usuario rejeitou no `L19-C10` o titulo
+`Reuniao barata demais costuma esconder lead ruim` porque ele basicamente
+repetia o que Lucas ja dizia na abertura. O corte desenvolve uma camada que o
+titulo anterior ignorava: CAC e custo de reuniao so podem ser avaliados junto
+do ticket, do valor recebido por cliente e do tipo de funil. Registre como
+evidencia do caso que o titulo visual deve completar o gancho falado com essa
+consequencia ou mecanismo, e nao funcionar como uma segunda legenda da mesma
+frase. A formulacao substituta ainda depende da escolha do usuario.
