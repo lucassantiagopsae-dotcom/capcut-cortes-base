@@ -422,3 +422,13 @@ falas independentes nem junte pecas apenas porque vieram da mesma live. Monte a
 versao longa a partir das fontes, com titulo, legenda, cadencia e fechamento
 proprios, preservando cronologia e eliminando duplicacoes causadas pela quebra em
 microganchos.
+
+Em 01/10/2026, o usuario rejeitou no `L19-C09` o titulo `Volume, conversao,
+custo e resultado contam historias diferentes`, dizendo que ele nao parecia ter
+relacao com o video. A fala do corte contrasta numero aparentemente bom com o
+problema que pode ficar escondido: volume alto com baixa qualidade, conversao
+alta com volume insuficiente, CPL baixo com leads ruins e muitas vendas com
+baixa margem. Registre a rejeicao como evidencia do caso: o novo titulo deve
+expor essa tensao ou consequencia, em vez de apenas enumerar quatro metricas ou
+repetir a primeira frase. A formulacao substituta ainda depende da escolha do
+usuario.
