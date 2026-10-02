@@ -444,3 +444,25 @@ consequencia ou mecanismo, e nao funcionar como uma segunda legenda da mesma
 frase. O usuario escolheu `Seu CAC nao precisa ser baixo. Seu ticket precisa
 pagar a conta`, rejeitando `CAC alto so e problema quando o ticket nao acompanha`
 e `O custo da aquisicao so faz sentido junto do valor por cliente`.
+
+Em 02/10/2026, depois de assistir ao lote `L19-C11` a `L19-C15` preparado para
+03/10/2026, o usuario avaliou o conjunto como `muito show` e aprovou os cinco
+videos, titulos e legendas apresentados para agendamento. Os renders estavam em
+`1.18x`, 1080x1920, 24 fps, audio estereo 48 kHz e passaram na auditoria de
+cadencia sem pausas bloqueantes. Registre a aprovacao como evidencia conjunta
+desse lote, sem promover isoladamente cada titulo, duracao ou escolha de corte
+a regra geral.
+
+Em 02/10/2026, depois de assistir aos doze renders `L19-C21` a
+`L19-C32`, o usuario afirmou que todos estavam prontos e muito bons, avaliou
+o lote como `perfeito`, disse que nao precisava mudar nada e destacou que ele
+ficou completo mesmo tendo retirado muito pouco do material. Os arquivos finais
+usavam o template Lucas/Fase 1 em 1080x1920, 24 fps e velocidade-base 1.18x; os
+doze passaram no gate oficial de cadencia sem spans de revisao de 0.60 s nem
+bloqueios de 0.90 s, e nenhum apresentou bloqueio no diagnostico adicional a
+-30 dB/0.60 s. Registre a fala como evidencia de resultado do lote completo:
+a selecao editorial, a limpeza pontual, os overlaps adaptativos e a preservacao
+do desenvolvimento foram suficientes sem novo refino humano. A aprovacao nao
+promove duracoes, quantidade de remocoes, titulos isolados ou parametros
+numericos a regra geral. A autorizacao logistica de agendamento feita na mesma
+mensagem nao integra esta evidencia editorial.
